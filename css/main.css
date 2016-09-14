@@ -1,10 +1,11 @@
 body{
 	background-color: #4099ff;
-	/*margin: auto;*/
+}
+.row{
+	background-color: white;
 }
 .header{
 	background-color: white;
-	padding: 0px;
 }
 .ca-logo{
 	float: left;
@@ -15,11 +16,34 @@ body{
 	padding: 15px 0;
 	display: block;
 	vertical-align: middle;
+	font-family: arial;
 }
 .navbar-dcr{
 	/*background-color: #4099ff;*/
-	width: 100%;
 }
 .navbar-brand{
 	font-size: 15px;
+}
+.footer{
+	padding: 25px;
+}
+.header-right{
+	background-image: url(../images/logo/header1.JPG);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 120px;
+}
+.contact-header{
+	padding: 10px 20px;
+	background-color: white;
+	opacity: .7;
+	color: black;
+	float: right;
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.glyphicon{
+	margin: 0 2px 0 25px;
 }
