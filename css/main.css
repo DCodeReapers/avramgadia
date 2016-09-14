@@ -19,13 +19,20 @@ body{
 	font-family: arial;
 }
 .navbar-dcr{
-	/*background-color: #4099ff;*/
+	margin: 0 15px 0 -15px;
+	width: auto;
+	background-color: #0077ff;
+}
+.navbar-dcr li a{
+	color: black;
 }
 .navbar-brand{
 	font-size: 15px;
 }
 .footer{
-	padding: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
 }
 .header-right{
 	background-image: url(../images/logo/header1.JPG);
@@ -46,4 +53,7 @@ body{
 }
 .glyphicon{
 	margin: 0 2px 0 25px;
+}
+.padding20{
+	padding: 20px;
 }
