@@ -1,0 +1,25 @@
+body{
+	background-color: #4099ff;
+	/*margin: auto;*/
+}
+.header{
+	background-color: white;
+	padding: 0px;
+}
+.ca-logo{
+	float: left;
+	margin: 15px;
+}
+.firm-name{
+	font-size: 20px;
+	padding: 15px 0;
+	display: block;
+	vertical-align: middle;
+}
+.navbar-dcr{
+	/*background-color: #4099ff;*/
+	width: 100%;
+}
+.navbar-brand{
+	font-size: 15px;
+}
