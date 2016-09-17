@@ -18,9 +18,15 @@ body{
 	vertical-align: middle;
 	font-family: arial;
 }
+@media (max-width:730px){
+	.ca-logo{
+		width: 25%;
+	}
+	.firm-name{
+		font-size: 16px;
+	}
+}
 .navbar-dcr{
-	margin: 0 15px 0 -15px;
-	width: auto;
 	background-color: #0077ff;
 }
 .navbar-dcr li a{
