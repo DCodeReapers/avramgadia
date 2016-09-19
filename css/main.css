@@ -63,3 +63,7 @@ body{
 .padding20{
 	padding: 20px;
 }
+marquee{
+	height: 130px;
+	scrollamount: 1;
+}
