@@ -1,0 +1,636 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ca Portal</title>
+    
+    
+    <link href="Temp5/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+function showmenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="visible";
+}
+function hidemenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="hidden";
+}
+    </script>
+
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="Calculators-FBT.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjAyOTAwNzg0OA9kFgJmD2QWAgIDD2QWFgIBDzwrAAkBAA8WBB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCCGQWEGYPZBYCAgEPDxYCHgtOYXZpZ2F0ZVVybAUkU2VydmljZXMuYXNweD9zZXJ2ZT1BdWRpdCAgQXNzdXJhbmNlZBYCZg8VARBBdWRpdCAgQXNzdXJhbmNlZAIBD2QWAgIBDw8WAh8CBRxTZXJ2aWNlcy5hc3B4P3NlcnZlPVRheGF0aW9uZBYCZg8VAQhUYXhhdGlvbmQCAg9kFgICAQ8PFgIfAgUqU2VydmljZXMuYXNweD9zZXJ2ZT1NQ0EgRmlsaW5nICBDb21wbGlhbmNlZBYCZg8VARZNQ0EgRmlsaW5nICBDb21wbGlhbmNlZAIDD2QWAgIBDw8WAh8CBTJTZXJ2aWNlcy5hc3B4P3NlcnZlPUNvcnBvcmF0ZSBBZHZpc29yeSAgQ29uc3VsdGluZ2QWAmYPFQEeQ29ycG9yYXRlIEFkdmlzb3J5ICBDb25zdWx0aW5nZAIED2QWAgIBDw8WAh8CBSZTZXJ2aWNlcy5hc3B4P3NlcnZlPUludmVzdG1lbnQgQmFua2luZ2QWAmYPFQESSW52ZXN0bWVudCBCYW5raW5nZAIFD2QWAgIBDw8WAh8CBT1TZXJ2aWNlcy5hc3B4P3NlcnZlPUJvb2sgS2VlcGluZyBBY2NvdW50aW5nICBCdXNpbmVzcyBTdXBwb3J0ZBYCZg8VASlCb29rIEtlZXBpbmcgQWNjb3VudGluZyAgQnVzaW5lc3MgU3VwcG9ydGQCBg9kFgICAQ8PFgIfAgUgU2VydmljZXMuYXNweD9zZXJ2ZT1OUkkgU2VydmljZXNkFgJmDxUBDE5SSSBTZXJ2aWNlc2QCBw9kFgICAQ8PFgIfAgUmU2VydmljZXMuYXNweD9zZXJ2ZT1Qcm9qZWN0IGZpbmFuY2luZyBkFgJmDxUBElByb2plY3QgZmluYW5jaW5nIGQCAw88KwAJAQAPFgQfABYAHwECC2QWFmYPZBYCAgEPDxYCHwIFCFBhbi5hc3B4ZBYCZg8VAQNQQU5kAgEPZBYCAgEPDxYCHwIFCFRhbi5hc3B4ZBYCZg8VAQNUQU5kAgIPZBYCAgEPDxYCHwIFFEUtUGF5bWVudE9ubGluZS5hc3B4ZBYCZg8VARBFLVBheW1lbnQgT25saW5lZAIDD2QWAgIBDw8WAh8CBQ5JbmNvbWVUYXguYXNweGQWAmYPFQEJSW5jb21lVGF4ZAIED2QWAgIBDw8WAh8CBQlDQkVDLmFzcHhkFgJmDxUBBENCRUNkAgUPZBYCAgEPDxYCHwIFClBGRVNJLmFzcHhkFgJmDxUBCFBGICYgRVNJZAIGD2QWAgIBDw8WAh8CBRhFeGNpc2VhbmRTZXJ2aWNlVGF4LmFzcHhkFgJmDxUBFkV4Y2lzZSBhbmQgU2VydmljZSBUYXhkAgcPZBYCAgEPDxYCHwIFCk1DQTIxLmFzcHhkFgJmDxUBA01DQWQCCA9kFgICAQ8PFgIfAgUIVmF0LmFzcHhkFgJmDxUBA1ZBVGQCCQ9kFgICAQ8PFgIfAgUMY2Fjc2N3YS5hc3B4ZBYCZg8VAQVDQS9DU2QCCg9kFgICAQ8PFgIfAgUNbW9yZWxpbmsuYXNweGQWAmYPFQEJTW9yZSBMaW5rZAIFDzwrAAkBAA8WBB8AFgAfAQISZBYkZg9kFgICAQ8PFgIfAgUPQ3VzdG9tQWN0cy5hc3B4ZBYCZg8VAQpDdXN0b20gQWN0ZAIBD2QWAgIBDw8WAh8CBQ9DZW50cmFsQWN0LmFzcHhkFgJmDxUBEkNlbnRyYWwgRXhjaXNlIEFjdGQCAg9kFgICAQ8PFgIfAgUPU2VydmljZUFjdC5hc3B4ZBYCZg8VAQ9TZXJ2aWNlIFRheCBBY3RkAgMPZBYCAgEPDxYCHwIFEUluY29tZVRheEFjdC5hc3B4ZBYCZg8VAQ1JbmNvbWVUYXggQWN0ZAIED2QWAgIBDw8WAh8CBRFXZWFsdGhUYXhBY3QuYXNweGQWAmYPFQENV2VhbHRoVGF4IEFjdGQCBQ9kFgICAQ8PFgIfAgUPR2lmdFRheEFjdC5hc3B4ZBYCZg8VAQxHaWZ0IFRheCBBY3RkAgYPZBYCAgEPDxYCHwIFE0ludGVyZXN0VGF4QWN0LmFzcHhkFgJmDxUBEEludGVyZXN0IFRheCBBY3RkAgcPZBYCAgEPDxYCHwIFFkV4cGVuZGl0dXJlVGF4QWN0LmFzcHhkFgJmDxUBE0V4cGVuZGl0dXJlIFRheCBBY3RkAggPZBYCAgEPDxYCHwIFEkNvbXBhbmllc0FjdHMuYXNweGQWAmYPFQENQ29tcGFuaWVzIEFjdGQCCQ9kFgICAQ8PFgIfAgU9TUNBQWN0LmFzcHg/bWNhaWQ9Q29tcGFuaWVzICggRG9uYXRpb24gdG8gTmF0aW9uYWwgKSBGdW5kIEFjdGQWAmYPFQErQ29tcGFuaWVzICggRG9uYXRpb24gdG8gTmF0aW9uYWwgKSBGdW5kIEFjdGQCCg9kFgICAQ8PFgIfAgU0TUNBQWN0cy5hc3B4P21jYWlkPUxpbWl0ZWQgTGlhYmlsaXR5IFBhcnRuZXJzaGlwIEFjdGQWAmYPFQEhTGltaXRlZCBMaWFiaWxpdHkgUGFydG5lcnNoaXAgQWN0ZAILD2QWAgIBDw8WAh8CBSJNQ0FBY3RzLmFzcHg/bWNhaWQ9UGFydG5lcnNoaXAgQWN0ZBYCZg8VAQ9QYXJ0bmVyc2hpcCBBY3RkAgwPZBYCAgEPDxYCHwIFLE1DQUFjdC5hc3B4P21jYWlkPVNvY2lldGllcyByZWdpc3RyYXRpb24gQWN0ZBYCZg8VARpTb2NpZXRpZXMgcmVnaXN0cmF0aW9uIEFjdGQCDQ9kFgICAQ8PFgIfAgVBTUNBQWN0cy5hc3B4P21jYWlkPU1vbm9wb2xpZXMgYW5kIFJlc3RyaWN0aXZlIFRyYWRlIFByYWN0aWNlcyBBY3RkFgJmDxUBLk1vbm9wb2xpZXMgYW5kIFJlc3RyaWN0aXZlIFRyYWRlIFByYWN0aWNlcyBBY3RkAg4PZBYCAgEPDxYCHwIFIk1DQUFjdHMuYXNweD9tY2FpZD1Db21wZXRpdGlvbiBBY3RkFgJmDxUBD0NvbXBldGl0aW9uIEFjdGQCDw9kFgICAQ8PFgIfAgUsTUNBQWN0cy5hc3B4P21jYWlkPUNoYXJ0ZXJlZCBBY2NvdW50YW50cyBBY3RkFgJmDxUBGUNoYXJ0ZXJlZCBBY2NvdW50YW50cyBBY3RkAhAPZBYCAgEPDxYCHwIFKk1DQUFjdHMuYXNweD9tY2FpZD1Db21wYW55IFNlY3JldGFyaWVzIEFjdGQWAmYPFQEXQ29tcGFueSBTZWNyZXRhcmllcyBBY3RkAhEPZBYCAgEPDxYCHwIFMU1DQUFjdHMuYXNweD9tY2FpZD1Db3N0IEFuZCBXb3JrcyBBY2NvdW50YW50cyBBY3RkFgJmDxUBHkNvc3QgQW5kIFdvcmtzIEFjY291bnRhbnRzIEFjdGQCBw88KwAJAQAPFgQfABYAHwECBmQWDGYPZBYCAgEPDxYCHwIFEEN1c3RvbVJ1bGVzLmFzcHhkFgJmDxUBDEN1c3RvbSBSdWxlc2QCAQ9kFgICAQ8PFgIfAgURQ2VudHJhbFJ1bGVzLmFzcHhkFgJmDxUBFENlbnRyYWwgRXhjaXNlIFJ1bGVzZAICD2QWAgIBDw8WAh8CBRFTZXJ2aWNlUnVsZXMuYXNweGQWAmYPFQERU2VydmljZSBUYXggUnVsZXNkAgMPZBYCAgEPDxYCHwIFE0luY29tZVRheFJ1bGVzLmFzcHhkFgJmDxUBD0luY29tZVRheCBSdWxlc2QCBA9kFgICAQ8PFgIfAgUVT3RoZXJEaXJlY3RSdWxlcy5hc3B4ZBYCZg8VARZPdGhlciBEaXJlY3QgVGF4IFJ1bGVzZAIFD2QWAgIBDw8WAh8CBShDb21wYW55TGF3UnVsZXMuYXNweD9tY2FpZD1Db21wYW55IFJ1bGVzZBYCZg8VARJDb21wYW55IGxhdyAgUnVsZXNkAgkPPCsACQEADxYEHwAWAB8BAgVkFgpmD2QWAgIBDw8WAh8CBRRDdXN0b21DaXJjdWxhcnMuYXNweGQWAmYPFQEGQ3VzdG9tZAIBD2QWAgIBDw8WAh8CBRVDZW50cmFsQ2lyY3VsYXJzLmFzcHhkFgJmDxUBDkNlbnRyYWwgRXhjaXNlZAICD2QWAgIBDw8WAh8CBRVTZXJ2aWNlQ2lyY3VsYXJzLmFzcHhkFgJmDxUBC1NlcnZpY2UgVGF4ZAIDD2QWAgIBDw8WAh8CBRdJbmNvbWVUYXhDaXJjdWxhcnMuYXNweGQWAmYPFQEJSW5jb21lVGF4ZAIED2QWAgIBDw8WAh8CBSxDb21wYW55TGF3UnVsZXMuYXNweD9tY2FpZD1Db21wYW55IENpcmN1bGFyc2QWAmYPFQEVQ29tcGFueSBsYXcgQ2lyY3VsYXJzZAILDzwrAAkBAA8WBB8AFgAfAQIFZBYKZg9kFgICAQ8PFgIfAgUYQ3VzdG9tTm90aWZpY2F0aW9ucy5hc3B4ZBYCZg8VAQZDdXN0b21kAgEPZBYCAgEPDxYCHwIFH0NlbnRyYWxFeGNpc2VOb3RpZmljYXRpb25zLmFzcHhkFgJmDxUBDkNlbnRyYWwgRXhjaXNlZAICD2QWAgIBDw8WAh8CBRtTZXJ2aWNlVGF4Tm90aWZpY2F0aW9uLmFzcHhkFgJmDxUBC1NlcnZpY2UgVGF4ZAIDD2QWAgIBDw8WAh8CBRFOb3RpZmljYXRpb24uYXNweGQWAmYPFQEJSW5jb21lVGF4ZAIED2QWAgIBDw8WAh8CBS5Db21wYW55TGF3UnVsZXMuYXNweD9tY2FpZD1Db21wYW55IE5vdGlmYWN0aW9uZBYCZg8VARhDb21wYW55IGxhdyAgTm90aWZhY3Rpb25kAg0PPCsACQEADxYEHwAWAB8BAgdkFg5mD2QWAgIBDw8WAh8CBQ9DdXN0b21Gb3JtLmFzcHhkFgJmDxUBCkN1c3RvbSBUYXhkAgEPZBYCAgEPDxYCHwIFEENlbnRyYWxGb3JtLmFzcHhkFgJmDxUBDkNlbnRyYWwgRXhjaXNlZAICD2QWAgIBDw8WAh8CBRBTZXJ2aWNlRm9ybS5hc3B4ZBYCZg8VAQtTZXJ2aWNlIFRheGQCAw9kFgICAQ8PFgIfAgUTSW5jb21lVGF4Rm9ybXMuYXNweGQWAmYPFQEKSW5jb21lIFRheGQCBA9kFgICAQ8PFgIfAgUOV2VhbHRoVGF4LmFzcHhkFgJmDxUBCldlYWx0aCBUYXhkAgUPZBYCAgEPDxYCHwIFDVJvY0Zvcm1zLmFzcHhkFgJmDxUBA1JPQ2QCBg9kFgICAQ8PFgIfAgUNTExwRm9ybXMuYXNweGQWAmYPFQEjTGltaXRlZCBMaWFiaWxpdHkgUGFydG5lcnNoaXAgKExMUClkAg8PPCsACQEADxYEHwAWAB8BAgtkFhZmD2QWAgIBDw8WAh8CBSh1dGlsaXRpZXMuYXNweD9zZXJ2ZT1SYXRlcyBvZiBJbmNvbWUgVGF4ZBYCZg8VARNSYXRlcyBvZiBJbmNvbWUgVGF4ZAIBD2QWAgIBDw8WAh8CBTB1dGlsaXRpZXMuYXNweD9zZXJ2ZT1URFMgUmF0ZXMgZm9yIE4uUi5JIHUvcyAxOTVkFgJmDxUBG1REUyBSYXRlcyBmb3IgTi5SLkkgdS9zIDE5NWQCAg9kFgICAQ8PFgIfAgUhdXRpbGl0aWVzLmFzcHg/c2VydmU9UmF0ZXMgb2YgVERTZBYCZg8VAQxSYXRlcyBvZiBURFNkAgMPZBYCAgEPDxYCHwIFKnV0aWxpdGllcy5hc3B4P3NlcnZlPVJhdGVzIG9mIE5TQyBJbnRlcmVzdGQWAmYPFQEVUmF0ZXMgb2YgTlNDIEludGVyZXN0ZAIED2QWAgIBDw8WAh8CBT91dGlsaXRpZXMuYXNweD9zZXJ2ZT1SYXRlcyBvZiBEZXByZWNpYXRpb24gVW5kZXIgSW5jb21lIFRheCBBY3RkFgJmDxUBKlJhdGVzIG9mIERlcHJlY2lhdGlvbiBVbmRlciBJbmNvbWUgVGF4IEFjdGQCBQ9kFgICAQ8PFgIfAgU8dXRpbGl0aWVzLmFzcHg/c2VydmU9UmF0ZXMgb2YgRGVwcmVjaWF0aW9uIFVuZGVyIENvbXBhbnkgQWN0ZBYCZg8VASdSYXRlcyBvZiBEZXByZWNpYXRpb24gVW5kZXIgQ29tcGFueSBBY3RkAgYPZBYCAgEPDxYCHwIFKXV0aWxpdGllcy5hc3B4P3NlcnZlPUNvc3QgSW5mbGF0aW9uIEluZGV4ZBYCZg8VARRDb3N0IEluZmxhdGlvbiBJbmRleGQCBw9kFgICAQ8PFgIfAgUmdXRpbGl0aWVzLmFzcHg/c2VydmU9Uk9DIEZlZSBTdHJ1Y3R1cmVkFgJmDxUBEVJPQyBGZWUgU3RydWN0dXJlZAIID2QWAgIBDw8WAh8CBSp1dGlsaXRpZXMuYXNweD9zZXJ2ZT1Hb2xkIGFuZCBTaWx2ZXIgUmF0ZXNkFgJmDxUBFUdvbGQgYW5kIFNpbHZlciBSYXRlc2QCCQ9kFgICAQ8PFgIfAgUfdXRpbGl0aWVzLmFzcHg/c2VydmU9TUlDUiBDb2Rlc2QWAmYPFQEKTUlDUiBDb2Rlc2QCCg9kFgICAQ8PFgIfAgUfdXRpbGl0aWVzLmFzcHg/c2VydmU9SUZTQyBDb2Rlc2QWAmYPFQEKSUZTQyBDb2Rlc2QCEQ8PFgQeBFRleHQFD01haGFyYXNodHJhIFZBVB8CBQ5zdGF0ZXN2YXQuYXNweGRkAhMPPCsACQEADxYEHwAWAB8BAgtkFhZmD2QWAgIBDw8WAh8CBRhzdGF0ZXN2YXQuYXNweD9zdGF0ZWlkPTFkFgJmDxUBCUpoYXJraGFuZGQCAQ9kFgICAQ8PFgIfAgUYc3RhdGVzdmF0LmFzcHg/c3RhdGVpZD0yZBYCZg8VAQNBIFBkAgIPZBYCAgEPDxYCHwIFGHN0YXRlc3ZhdC5hc3B4P3N0YXRlaWQ9M2QWAmYPFQEFQXNzYW1kAgMPZBYCAgEPDxYCHwIFGHN0YXRlc3ZhdC5hc3B4P3N0YXRlaWQ9NGQWAmYPFQEFQmloYXJkAgQPZBYCAgEPDxYCHwIFGHN0YXRlc3ZhdC5hc3B4P3N0YXRlaWQ9NWQWAmYPFQEKQ2hhbmRpZ2FyaGQCBQ9kFgICAQ8PFgIfAgUYc3RhdGVzdmF0LmFzcHg/c3RhdGVpZD02ZBYCZg8VAQVEZWxoaWQCBg9kFgICAQ8PFgIfAgUYc3RhdGVzdmF0LmFzcHg/c3RhdGVpZD03ZBYCZg8VAQNHb2FkAgcPZBYCAgEPDxYCHwIFGHN0YXRlc3ZhdC5hc3B4P3N0YXRlaWQ9OGQWAmYPFQEHR3VqYXJhdGQCCA9kFgICAQ8PFgIfAgUYc3RhdGVzdmF0LmFzcHg/c3RhdGVpZD05ZBYCZg8VAQdIYXJ5YW5hZAIJD2QWAgIBDw8WAh8CBRlzdGF0ZXN2YXQuYXNweD9zdGF0ZWlkPTEwZBYCZg8VAQhIaW1hY2hhbGQCCg9kFgICAQ8PFgIfAgUMbW9yZXZhdC5hc3B4ZBYCZg8VAQhNb3JlIFZBVGQCFQ88KwAJAQAPFgQfABYAHwECCmQWFGYPZBYCAgEPDxYCHwIFIUNhbGN1bGF0b3JzLUtpc2FuVmlrYXNQYXRyYXMuYXNweGQWAmYPFQERS2lzYW4gVmlrYXMgUGF0cmFkAgEPZBYCAgEPDxYCHwIFIkNhbGN1bGF0b3JzLUdldE5vT2ZJbnN0YWxtZW50LmFzcHhkFgJmDxUBGUdldCBOdW1iZXIgT2YgSW5zdGFsbG1lbnRkAgIPZBYCAgEPDxYCHwIFFENhbGN1bGF0b3JzLUVNSS5hc3B4ZBYCZg8VASFFcXVhdGVkIE1vbnRobHkgSW5zdGFsbG1lbnQgKEVNSSlkAgMPZBYCAgEPDxYCHwIFFENhbGN1bGF0b3JzLUhSQS5hc3B4ZBYCZg8VARpIb3VzZSBSZW50IEFsbG93YW5jZSAoSFJBKWQCBA9kFgICAQ8PFgIfAgUUQ2FsY3VsYXRvcnMtRkJULmFzcHhkFgJmDxUBGEZyaW5nZSBCZW5lZml0IFRheCAoRkJUKWQCBQ9kFgICAQ8PFgIfAgUkQ2FsY3VsYXRvcnMtSW5jb21lVGF4Q2FsY3VsYXRvci5hc3B4ZBYCZg8VARVJbmNvbWUgVGF4IENhbGN1bGF0b3JkAgYPZBYCAgEPDxYCHwIFGUNhbGN1bGF0b3JzLUhvbWVMb2FuLmFzcHhkFgJmDxUBFEhvbWUgTG9hbiBDYWxjdWxhdG9yZAIHD2QWAgIBDw8WAh8CBRlDYWxjdWxhdG9ycy1BdXRvTG9hbi5hc3B4ZBYCZg8VARRBdXRvIExvYW4gQ2FsY3VsYXRvcmQCCA9kFgICAQ8PFgIfAgUeQ2FsY3VsYXRvcnMtVkFUQ2FsY3VsYXRvci5hc3B4ZBYCZg8VASBWYWx1ZSBBZGRlZCBUYXggKFZBVCkgQ2FsY3VsYXRvcmQCCQ9kFgICAQ8PFgIfAgUUQ2FsY3VsYXRvcnMtTlNDLmFzcHhkFgJmDxUBIk5hdGlvbmFsIFNhdmluZyBDZXJ0aWZpY2F0ZXMgKE5TQylkZAV8Y4ARhlSV/B216xgrLUoKm2xj" />
+</div>
+
+   
+                    <div class="Midnewctbt-blog">-->
+                        
+<table style="width: 100%">
+        <tr style="width: 100%;height:95%">
+            <td style="width: 100%;height:95%">
+             <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr valign="top" style="width: 100%">
+                    <td valign="top" style="width:3%" >
+
+                    </td>
+                    <td valign="top" style="width:94%" >
+                        
+   
+   
+    <script language="javascript" type="text/javascript">
+    function FBTCal(e,txt1,txt2,per)
+    {
+        var code=e.keyCode;
+        //if(!/\d$/.test(txt1.value) && txt1.value!="")
+        if(code != 8 && code != 46)
+        {
+            //alert(code);
+        if((code < 48 || code > 57 ) && (code < 96 || code >105 ))
+        {
+            alert("Wrong Entry!");
+            txt1.value="";
+            txt2.value=0;
+            return false;
+       }
+       else
+       {
+        txt2.value=Math.round((txt1.value) * (per/100));
+       }
+       }
+    }
+    function calTotalValue(t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,tTax)
+    {
+      t20.value = Number(t1.value) + Number(t2.value) + Number(t3.value) + Number(t4.value) + Number(t5.value) + Number(t6.value) + Number(t7.value) + Number(t8.value) + Number(t9.value) + Number(t10.value) + Number(t11.value) + Number(t12.value) + Number(t13.value) + Number(t14.value) + Number(t15.value) + Number(t16.value) + Number(t17.value) + Number(t18.value) + Number(t19.value);
+      taxpayable();
+      CalSurCharge();
+      calEducation();
+      taxPayTotal();
+      grandTotal();
+     }
+     
+    function taxpayable()
+    {
+        var value1=document.getElementById("Text153").value;
+        var taxpayble1=document.getElementById("Text160");
+        taxpayble1.value=Math.round(Number(value1)*(30/100));
+        var value2=document.getElementById("Text155").value;
+        var taxpayble2=document.getElementById("Text161");
+        taxpayble2.value=Math.round(Number(value2)*(30/100));
+        var value3=document.getElementById("Text157").value;
+        var taxpayble3=document.getElementById("Text162");
+        taxpayble3.value=Math.round(Number(value3)*(30/100));
+        var value4=document.getElementById("Text159").value;
+        var taxpayble4=document.getElementById("Text163");
+        taxpayble4.value=Math.round(Number(value4)*(30/100));
+    }
+    function CalSurCharge()
+    {
+        var radio=document.getElementsByName("Type");
+        var taxpayble1=document.getElementById("Text160").value;
+        var taxpayble2=document.getElementById("Text161").value;
+        var taxpayble3=document.getElementById("Text162").value;
+        var taxpayble4=document.getElementById("Text163").value;
+        var suchrg1=document.getElementById("Text165");
+        var suchrg2=document.getElementById("Text166");
+        var suchrg3=document.getElementById("Text167");
+        var suchrg4=document.getElementById("Text168");
+        if(radio[1].checked==true)
+        {
+            suchrg1.value=Math.round(Number(taxpayble1)*(0.025));
+            suchrg2.value=Math.round(Number(taxpayble2)*(0.025));
+            suchrg3.value=Math.round(Number(taxpayble3)*(0.025));
+            suchrg4.value=Math.round(Number(taxpayble4)*(0.025));
+        }
+        else
+        {
+            suchrg1.value=Math.round(Number(taxpayble1)*(0.1));
+            suchrg2.value=Math.round(Number(taxpayble2)*(0.1));
+            suchrg3.value=Math.round(Number(taxpayble3)*(0.1));
+            suchrg4.value=Math.round(Number(taxpayble4)*(0.1));
+        }
+    }
+    function calEducation()
+    {
+        var taxpayble1=document.getElementById("Text160").value;
+        var taxpayble2=document.getElementById("Text161").value;
+        var taxpayble3=document.getElementById("Text162").value;
+        var taxpayble4=document.getElementById("Text163").value;
+        var suchrg1=document.getElementById("Text165").value;
+        var suchrg2=document.getElementById("Text166").value;
+        var suchrg3=document.getElementById("Text167").value;
+        var suchrg4=document.getElementById("Text168").value;
+        var Education1=document.getElementById("Text170");
+        var Education2=document.getElementById("Text171");
+        var Education3=document.getElementById("Text172");
+        var Education4=document.getElementById("Text173");
+        Education1.value=Math.round((Number(taxpayble1)+Number(suchrg1))*0.03);
+        Education2.value=Math.round((Number(taxpayble2)+Number(suchrg2))*0.03);
+        Education3.value=Math.round((Number(taxpayble3)+Number(suchrg3))*0.03);
+        Education4.value=Math.round((Number(taxpayble4)+Number(suchrg4))*0.03);
+    }
+    function taxPayTotal()
+    {
+        var taxpayble1=document.getElementById("Text160").value;
+        var taxpayble2=document.getElementById("Text161").value;
+        var taxpayble3=document.getElementById("Text162").value;
+        var taxpayble4=document.getElementById("Text163").value;
+        var taxTotal1=document.getElementById("Text164");
+        var suchrg1=document.getElementById("Text165").value;
+        var suchrg2=document.getElementById("Text166").value;
+        var suchrg3=document.getElementById("Text167").value;
+        var suchrg4=document.getElementById("Text168").value;
+        var taxTotal2=document.getElementById("Text169");
+        var Education1=document.getElementById("Text170").value;
+        var Education2=document.getElementById("Text171").value;
+        var Education3=document.getElementById("Text172").value;
+        var Education4=document.getElementById("Text173").value;
+        var taxTotal3=document.getElementById("Text174");
+        taxTotal1.value=Number(taxpayble1)+ Number(taxpayble2)+Number(taxpayble3)+Number(taxpayble4);
+        taxTotal2.value=Number(suchrg1)+ Number(suchrg2)+Number(suchrg3) +Number(suchrg4);
+        taxTotal3.value=Number(Education1)+ Number(Education2)+Number(Education3)+Number(Education4);
+    }
+    function grandTotal()
+    {
+        var taxpayble1=document.getElementById("Text160").value;
+        var taxpayble2=document.getElementById("Text161").value;
+        var taxpayble3=document.getElementById("Text162").value;
+        var taxpayble4=document.getElementById("Text163").value;
+        var suchrg1=document.getElementById("Text165").value;
+        var suchrg2=document.getElementById("Text166").value;
+        var suchrg3=document.getElementById("Text167").value;
+        var suchrg4=document.getElementById("Text168").value;
+        var Education1=document.getElementById("Text170").value;
+        var Education2=document.getElementById("Text171").value;
+        var Education3=document.getElementById("Text172").value;
+        var Education4=document.getElementById("Text173").value;
+        var grandTotal1=document.getElementById("Text175");
+        var grandTotal2=document.getElementById("Text176");
+        var grandTotal3=document.getElementById("Text177");
+        var grandTotal4=document.getElementById("Text178");
+        grandTotal1.value=Number(taxpayble1)+ Number(suchrg1)+Number(Education1);
+        grandTotal2.value=Number(taxpayble2)+ Number(suchrg2)+Number(Education2);
+        grandTotal3.value=Number(taxpayble3)+ Number(suchrg3)+Number(Education3);
+        grandTotal4.value=Number(taxpayble4)+ Number(suchrg4)+Number(Education4);
+    }
+    function checkRadio()
+    {
+        var radio=document.getElementsByName("Type");
+        radio[0].checked=true;
+    }
+ 
+    </script>
+    
+ </head>
+<body onload="checkRadio()" style="padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px" bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0">
+    
+    <div>
+
+        <table width="100%" style="font-size:smaller  ;" cellpadding="0px" cellspacing="0px">
+            <tr>
+                <td class="header" align="center" style="height: 22px">
+                    <strong style="font-family: Arial">
+                        FBT CALCULATOR&nbsp;</strong>
+                </td>
+            </tr>
+            <tr>
+
+                <td style="height: 20px; font-family: Arial;" align="right">
+                    <input id="rdbtn1" name="Type" type="radio" onclick="javascript:CalSurCharge();calEducation();taxPayTotal();grandTotal()" value="Domestic"  />Domestic
+                    <input id="rdbtn2" name="Type" type="radio" onclick="javascript:CalSurCharge();calEducation();taxPayTotal();grandTotal()" value="Foreign"  />Foreign &nbsp;
+                </td>
+            </tr>
+            <tr style="width:100%">
+                <td class="table1" style="height: 219px">
+                    <div style="width:98%; height:200px; overflow-y:scroll">
+                        <table style="border-width:thin; font-size:smaller ; font-family:Verdana " width="100%" cellpadding="0px" border="1" cellspacing="0px">
+
+                            <tr>
+                                <th style="width:197px" rowspan="2">Expenditure</th>
+                                <th style="width:108px" rowspan="2">%FBT</th>
+                                <th style="width:17.5%; height: 14px;" colspan="2">Quarter 1</th>
+                                <th style="width:17.5%; height: 14px;" colspan="2">Quarter 2</th>
+                                <th style="width:17.5%; height: 14px;" colspan="2">Quarter 3</th>
+
+                                <th style="width:17.5%; height: 14px;" colspan="2">Quarter 4</th>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">Expenditure</td>
+                                <td style="width:7.5%">Value</td>
+                                <td style="width:10%">Expenditure</td>
+                                <td style="width:7.7%">Value</td>
+
+                                <td style="width:10%">Expenditure</td>
+                                <td style="width:7.5%">Value</td>
+                                <td style="width:9.3%">Expenditure</td>
+                                <td style="width:7.5%">Value</td>
+                            </tr>
+                            <tr>
+                                <td style="width:197px">Free or concessional tickets</td>
+
+                                <td style="width:108px">100</td>
+                                <td style="width:10%"><input onkeyup="javascript:FBTCal(event,this,txtQ1V1,'100');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153)" type="text" style="width:97%;text-align:right" id="txtQ1E1" /></td>
+                                <td style="width:7.5%"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V1" /></td>
+                                <td style="width:10%"><input type="text" onkeyup="javascript:FBTCal(event,this,Text3,'100');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text2" /></td>
+                                <td style="width:7.5%"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text3" /></td>
+                                <td style="width:10%"><input type="text" onkeyup="javascript:FBTCal(event,this,Text5,'100');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text4" /></td>
+                                <td style="width:7.5%"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text5" /></td>
+                                <td style="width:10%"> <input type="text" onkeyup="javascript:FBTCal(event,this,Text7,'100');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text6" /></td>
+
+                                <td style="width:7.5%"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text7" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width:197px">Contribution to Superannuation Fund</td>
+                                <td style="width:108px">
+                                    100</td>
+                                <td style="width:10%"><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V2,'100');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E2" /></td>
+                                <td style="width:7.5%"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V2" /></td>
+
+                                <td style="width:10%"><input type="text" onkeyup="javascript:FBTCal(event,this,Text11,'100');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text10" /></td>
+                                <td style="width:7.5%"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text11" /></td>
+                                <td style="width:10%"><input type="text" onkeyup="javascript:FBTCal(event,this,Text13,'100');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text12" /></td>
+                                <td style="width:7.5%"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text13" /></td>
+                                <td style="width:10%"><input type="text" onkeyup="javascript:FBTCal(event,this,Text15,'100');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text14" /></td>
+                                <td style="width:7.5%"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text15" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px" >Entertainment</td>
+
+                                <td style="width: 108px">
+                                    20</td>
+                                <td ><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V3,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E3" /></td>
+                                <td ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V3" /></td>
+                                <td ><input type="text" onkeyup="javascript:FBTCal(event,this,Text19,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text18" /></td>
+                                <td ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text19" /></td>
+                                <td ><input type="text" onkeyup="javascript:FBTCal(event,this,Text21,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text20" /></td>
+                                <td ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text21" /></td>
+
+                                <td ><input type="text" onkeyup="javascript:FBTCal(event,this,Text23,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text22" /></td>
+                                <td ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text23" /></td>
+                            </tr>
+                            <tr>
+                                <td style="height: 26px; width: 197px;">Hospitality</td>
+                                <td style="height: 26px; width: 108px;">
+                                    20</td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V4,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E4" /></td>
+
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V4" language="javascript" onclick="return Text25_onclick()" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text27,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text26" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text27" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text29,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text28" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text29" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text31,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text30" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text31" /></td>
+                            </tr>
+                            <tr>
+
+                                <td style="width: 197px">
+                                    Conference</td>
+                                <td style="width: 108px">
+                                    20</td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V5,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E5" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V5" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text35,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text34" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text35" /></td>
+
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text37,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text36" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text37" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text39,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text38" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text39" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px; height: 26px;">
+                                    Sale Promotion</td>
+
+                                <td style="height: 26px; width: 108px;">
+                                    20</td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V6,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E6" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V6" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text43,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text42" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text43" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text45,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text44" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text45" /></td>
+
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text47,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text46" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text47" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px; height: 26px;" >Employees welfare</td>
+                                <td style="height: 26px; width: 108px;" >
+                                    20</td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V7,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E7" /></td>
+
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V7" /></td>
+                                <td style="height: 26px" ><input type="text" onkeyup="javascript:FBTCal(event,this,Text51,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text50" /></td>
+                                <td style="height: 26px" ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text51" /></td>
+                                <td style="height: 26px" ><input type="text" onkeyup="javascript:FBTCal(event,this,Text53,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text52" /></td>
+                                <td style="height: 26px" ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text53" /></td>
+                                <td style="height: 26px" ><input type="text" onkeyup="javascript:FBTCal(event,this,Text55,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text54" /></td>
+                                <td style="height: 26px" ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text55" /></td>
+                            </tr>
+                            <tr>
+
+                                <td style="width: 197px">Conveyance</td>
+                                <td style="width: 108px">
+                                    20</td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V8,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E8" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V8" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text59,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text58" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text59" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text61,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text60" /></td>
+
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text61" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text63,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text62" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text63" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px">Use of hotel, lodging</td>
+                                <td style="width: 108px">
+                                    20</td>
+
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V9,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E9" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V9" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text67,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text66" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text67" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text69,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text68" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text69" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text71,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text70" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text71" /></td>
+                            </tr>
+
+                            <tr>
+                                <td style="height: 26px; width: 197px;">Repair of motor car</td>
+                                <td style="height: 26px; width: 108px;">
+                                    20</td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V10,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E10" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V10" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text75,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text74" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text75" /></td>
+
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text77,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text76" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text77" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text79,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text78" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text79" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px; height: 31px;">
+                                    Maintenance of aircrafts</td>
+
+                                <td style="height: 31px; width: 108px;">
+                                    20</td>
+                                <td style="height: 31px"><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V11,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E11" /></td>
+                                <td style="height: 31px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V11" /></td>
+                                <td style="height: 31px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text83,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text82" /></td>
+                                <td style="height: 31px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text83" /></td>
+                                <td style="height: 31px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text85,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text84" /></td>
+                                <td style="height: 31px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text85" /></td>
+
+                                <td style="height: 31px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text87,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text86" /></td>
+                                <td style="height: 31px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text87" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px" >Use of Telephone</td>
+                                <td style="width: 108px" >
+                                    20</td>
+                                <td ><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V12,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E12" /></td>
+
+                                <td ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V12" /></td>
+                                <td ><input type="text" onkeyup="javascript:FBTCal(event,this,Text91,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text90" /></td>
+                                <td ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text91" /></td>
+                                <td ><input type="text" onkeyup="javascript:FBTCal(event,this,Text93,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text92" /></td>
+                                <td ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text93" /></td>
+                                <td ><input type="text" onkeyup="javascript:FBTCal(event,this,Text95,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text94" /></td>
+                                <td ><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text95" /></td>
+                            </tr>
+                            <tr>
+
+                                <td style="width: 197px; height: 26px;">Maintenance of accomodation</td>
+                                <td style="height: 26px; width: 108px;">
+                                    20</td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V13,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E13" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V13" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text99,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text98" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text99" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text101,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text100" /></td>
+
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text101" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text103,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text102" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text103" /></td>
+                            </tr>
+                            <tr>
+                                <td style="height: 26px; width: 197px;">Festival celebrations</td>
+                                <td style="height: 26px; width: 108px;">
+                                    20</td>
+
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V14,'20');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E14" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V14" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text107,'20');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text106" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text107" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text109,'20');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text108" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text109" /></td>
+                                <td style="height: 26px"><input type="text" onkeyup="javascript:FBTCal(event,this,Text111,'20');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text110" /></td>
+                                <td style="height: 26px"><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text111" /></td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: 197px">Use of health club</td>
+                                <td style="width: 108px">
+                                    50</td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V15,'50');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )"  style="width:98%;text-align:right" id="txtQ1E15" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V15" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text115,'50');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)"  style="width:98%;text-align:right" id="Text114" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text115" /></td>
+
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text117,'50');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)"  style="width:98%;text-align:right" id="Text116" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text117" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text119,'50');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)"  style="width:98%;text-align:right" id="Text118" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text119" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px">Use of any other club</td>
+                                <td style="width: 108px">
+
+                                    50</td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V16,'50');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E16" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V16" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text123,'50');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text122" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text123" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text125,'50');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text124" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text125" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text127,'50');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text126" /></td>
+
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text127" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px">Gifts</td>
+                                <td style="width: 108px">
+                                    50</td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V17,'50');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )"  style="width:98%;text-align:right" id="txtQ1E17" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V17" /></td>
+
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text131,'50');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)"  style="width:98%;text-align:right" id="Text130" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text131" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text133,'50');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)"  style="width:98%;text-align:right" id="Text132" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text133" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text135,'50');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)"  style="width:98%;text-align:right" id="Text134" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text135" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px">Scholarship</td>
+
+                                <td style="width: 108px">
+                                    50</td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V18,'50');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E18" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V18" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text139,'50');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text138" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text139" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text141,'50');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text140" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text141" /></td>
+
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text143,'50');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text142" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text143" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 197px">Tour,Travel</td>
+                                <td style="width: 108px">
+                                    5</td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,txtQ1V19,'5');calTotalValue(txtQ1E1,txtQ1E2,txtQ1E3,txtQ1E4,txtQ1E5,txtQ1E6,txtQ1E7,txtQ1E8,txtQ1E9,txtQ1E10,txtQ1E11,txtQ1E12,txtQ1E13,txtQ1E14,txtQ1E15,txtQ1E16,txtQ1E17,txtQ1E18,txtQ1E19,Text152);calTotalValue(txtQ1V1,txtQ1V2,txtQ1V3,txtQ1V4,txtQ1V5,txtQ1V6,txtQ1V7,txtQ1V8,txtQ1V9,txtQ1V10,txtQ1V11,txtQ1V12,txtQ1V13,txtQ1V14,txtQ1V15,txtQ1V16,txtQ1V17,txtQ1V18,txtQ1V19,Text153 )" style="width:98%;text-align:right" id="txtQ1E19" /></td>
+
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="txtQ1V19" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text147,'5');calTotalValue(Text2,Text10,Text18,Text26,Text34,Text42,Text50,Text58,Text66,Text74,Text82,Text90,Text98,Text106,Text114,Text122,Text130,Text138,Text146,Text154);calTotalValue(Text3,Text11,Text19,Text27,Text35,Text43,Text51,Text59,Text67,Text75,Text83,Text91,Text99,Text107,Text115,Text123,Text131,Text139,Text147,Text155)" style="width:98%;text-align:right" id="Text146" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text147" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text149,'5');calTotalValue(Text4,Text12,Text20,Text28,Text36,Text44,Text52,Text60,Text68,Text76,Text84,Text92,Text100,Text108,Text116,Text124,Text132,Text140,Text148,Text156);calTotalValue(Text5,Text13,Text21,Text29,Text37,Text45,Text53,Text61,Text69,Text77,Text85,Text93,Text101,Text109,Text117,Text125,Text133,Text141,Text149,Text157)" style="width:98%;text-align:right" id="Text148" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text149" /></td>
+                                <td><input type="text" onkeyup="javascript:FBTCal(event,this,Text151,'5');calTotalValue(Text6,Text14,Text22,Text30,Text38,Text46,Text54,Text62,Text70,Text78,Text86,Text94,Text102,Text110,Text118,Text126,Text134,Text142,Text150,Text158);calTotalValue(Text7,Text15,Text23,Text31,Text39,Text47,Text55,Text63,Text71,Text79,Text87,Text95,Text103,Text111,Text119,Text127,Text135,Text143,Text151,Text159)" style="width:98%;text-align:right" id="Text150" /></td>
+                                <td><input type="text" readonly="readonly" style="width:98%;text-align:right" id="Text151" /></td>
+                            </tr>
+                            
+                       </table>
+
+                    </div>
+                    <hr />
+                    </td>
+                    </tr> 
+                      <tr>
+                <td class="table1" style="height:30px">
+                    <table width="100%" style="margin-right:0px;border-collapse:collapse ">
+                        <tr class="table1" style="margin-right:10px">
+                           <td style="width:31%;font-size:larger; font-weight: bold; height: 26px;">Total</td>
+
+                           <td style="width:9.3%; height: 26px;"><input readonly="readonly" type="text" style="width:98%;text-align:right" id="Text152" /></td>
+                           <td style="width:8%; height: 26px;"><input onchange="check()" readonly="readonly" type="text" style="width:98%;text-align:right" id="Text153" /></td>
+                           <td style="width:10%; height: 26px;"><input readonly="readonly" type="text" style="width:98%;text-align:right" id="Text154" /></td>
+                           <td style="width:7.5%; height: 26px;"><input readonly="readonly" type="text" style="width:98%;text-align:right" id="Text155" /></td>
+                           <td style="width:9.7%; height: 26px;"><input readonly="readonly" type="text" style="width:98%;text-align:right" id="Text156" /></td>
+                           <td style="width:7.5%; height: 26px;"><input readonly="readonly" type="text" style="width:98%;text-align:right" id="Text157" /></td>
+                           <td style="width:10%; height: 26px;"><input readonly="readonly" type="text" style="width:98%;text-align:right" id="Text158" /></td>
+                           <td style="width:7.5%; height: 26px;"><input readonly="readonly" type="text" style="width:98%;text-align:right" id="Text159" /></td>
+                           <td style="height: 26px">
+
+                               &nbsp;
+                           </td>
+                       </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset class="colorFS">
+
+                    <legend>Tax Details:</legend>
+                        <table width="100%" cellpadding="0px" cellspacing="0px">
+                            <tr>
+                                <td width="15%" style="height: 22px"></td>
+                                <th width="12%" style="height: 22px">
+                                    Quarter1</th>
+                                <th width="12%" style="height: 22px">
+                                    Quarter2</th>
+
+                                <th width="12%" style="height: 22px">
+                                    Quarter3</th>
+                                <th width="12%" style="height: 22px">
+                                    Quarter4</th>
+                                <th width="12%" style="height: 22px">
+                                    Total</th>
+                                    
+                                <td rowspan="5" valign="top" width="20%"><br />
+
+                                    &nbsp;</td>
+                            </tr>
+                            <tr >
+                                <td >
+                                    Tax Payable</td>
+                                <td ><input type="text" style="width:98%;text-align:right" id="Text160" readonly="readOnly" /></td>
+                                <td ><input type="text" style="width:98%;text-align:right" id="Text161" readonly="readOnly" /></td>
+                                <td ><input type="text" style="width:98%;text-align:right" id="Text162" readonly="readOnly" /></td>
+
+                                <td ><input type="text" style="width:98%;text-align:right" id="Text163" readonly="readOnly" /></td>
+                                <td ><input type="text" style="width:92%;text-align:right" id="Text164" readonly="readOnly" /></td>
+                                
+                            </tr>
+                            <tr >
+                                <td style="height: 31px">
+                                    Surcharge</td>
+                                <td style="height: 31px"><input type="text" style="width:98%;text-align:right" id="Text165" readonly="readOnly" /></td>
+                                <td style="height: 31px"><input type="text" style="width:98%;text-align:right" id="Text166" readonly="readOnly" /></td>
+
+                                <td style="height: 31px"><input type="text" style="width:98%;text-align:right" id="Text167" readonly="readOnly" /></td>
+                                <td style="height: 31px"><input type="text" style="width:98%;text-align:right" id="Text168" readonly="readOnly" /></td>
+                                <td style="height: 31px"><input type="text" style="width:92%;text-align:right" id="Text169" readonly="readOnly" /></td>
+                                
+                            </tr>
+                            <tr >
+                                <td style="height: 24px">
+                                    Education Cess</td>
+                                <td style="height: 24px"><input type="text" style="width:98%;text-align:right" id="Text170" readonly="readOnly" /></td>
+
+                                <td style="height: 24px"><input type="text" style="width:98%;text-align:right" id="Text171" readonly="readOnly" /></td>
+                                <td style="height: 24px"><input type="text" style="width:98%;text-align:right" id="Text172" readonly="readOnly" /></td>
+                                <td style="height: 24px"><input type="text" style="width:98%;text-align:right" id="Text173" readonly="readOnly" /></td>
+                                <td style="height: 24px"><input type="text" style="width:92%;text-align:right" id="Text174" readonly="readOnly" /></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Grand Total</td>
+                                <td><input type="text" style="width:98%;text-align:right" id="Text175" readonly="readOnly" /></td>
+
+                                <td><input type="text" style="width:98%;text-align:right" id="Text176" readonly="readOnly" /></td>
+                                <td><input type="text" style="width:98%;text-align:right" id="Text177" readonly="readOnly" /></td>
+                                <td><input type="text" style="width:98%;text-align:right" id="Text178" readonly="readOnly" /></td>
+                                <td><input name="ctl00$ContentPlaceHolder1$Text179" type="text" id="ctl00_ContentPlaceHolder1_Text179" style="text-align:right;width:92%" /></td>
+                                
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+
+        </table>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Footer">
+        <div class="FooterMain">
+            <div class="FooterLinkMain">
+                
+                <div class="Copyright">
+                    <a target="_blank" href="http://dcodereapers.com/">Developed By:dcodereapers
+					</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

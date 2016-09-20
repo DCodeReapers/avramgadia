@@ -1,0 +1,1106 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ca Portal</title>
+    
+    
+    <link href="Temp5/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+function showmenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="visible";
+}
+function hidemenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="hidden";
+}
+    </script>
+
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="Calculators-VATCalculator.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMDUyNjYzMjgPZBYCZg9kFgICAw9kFhYCAQ88KwAJAQAPFgQeCERhdGFLZXlzFgAeC18hSXRlbUNvdW50AghkFhBmD2QWAgIBDw8WAh4LTmF2aWdhdGVVcmwFJFNlcnZpY2VzLmFzcHg/c2VydmU9QXVkaXQgIEFzc3VyYW5jZWQWAmYPFQEQQXVkaXQgIEFzc3VyYW5jZWQCAQ9kFgICAQ8PFgIfAgUcU2VydmljZXMuYXNweD9zZXJ2ZT1UYXhhdGlvbmQWAmYPFQEIVGF4YXRpb25kAgIPZBYCAgEPDxYCHwIFKlNlcnZpY2VzLmFzcHg/c2VydmU9TUNBIEZpbGluZyAgQ29tcGxpYW5jZWQWAmYPFQEWTUNBIEZpbGluZyAgQ29tcGxpYW5jZWQCAw9kFgICAQ8PFgIfAgUyU2VydmljZXMuYXNweD9zZXJ2ZT1Db3Jwb3JhdGUgQWR2aXNvcnkgIENvbnN1bHRpbmdkFgJmDxUBHkNvcnBvcmF0ZSBBZHZpc29yeSAgQ29uc3VsdGluZ2QCBA9kFgICAQ8PFgIfAgUmU2VydmljZXMuYXNweD9zZXJ2ZT1JbnZlc3RtZW50IEJhbmtpbmdkFgJmDxUBEkludmVzdG1lbnQgQmFua2luZ2QCBQ9kFgICAQ8PFgIfAgU9U2VydmljZXMuYXNweD9zZXJ2ZT1Cb29rIEtlZXBpbmcgQWNjb3VudGluZyAgQnVzaW5lc3MgU3VwcG9ydGQWAmYPFQEpQm9vayBLZWVwaW5nIEFjY291bnRpbmcgIEJ1c2luZXNzIFN1cHBvcnRkAgYPZBYCAgEPDxYCHwIFIFNlcnZpY2VzLmFzcHg/c2VydmU9TlJJIFNlcnZpY2VzZBYCZg8VAQxOUkkgU2VydmljZXNkAgcPZBYCAgEPDxYCHwIFJlNlcnZpY2VzLmFzcHg/c2VydmU9UHJvamVjdCBmaW5hbmNpbmcgZBYCZg8VARJQcm9qZWN0IGZpbmFuY2luZyBkAgMPPCsACQEADxYEHwAWAB8BAgtkFhZmD2QWAgIBDw8WAh8CBQhQYW4uYXNweGQWAmYPFQEDUEFOZAIBD2QWAgIBDw8WAh8CBQhUYW4uYXNweGQWAmYPFQEDVEFOZAICD2QWAgIBDw8WAh8CBRRFLVBheW1lbnRPbmxpbmUuYXNweGQWAmYPFQEQRS1QYXltZW50IE9ubGluZWQCAw9kFgICAQ8PFgIfAgUOSW5jb21lVGF4LmFzcHhkFgJmDxUBCUluY29tZVRheGQCBA9kFgICAQ8PFgIfAgUJQ0JFQy5hc3B4ZBYCZg8VAQRDQkVDZAIFD2QWAgIBDw8WAh8CBQpQRkVTSS5hc3B4ZBYCZg8VAQhQRiAmIEVTSWQCBg9kFgICAQ8PFgIfAgUYRXhjaXNlYW5kU2VydmljZVRheC5hc3B4ZBYCZg8VARZFeGNpc2UgYW5kIFNlcnZpY2UgVGF4ZAIHD2QWAgIBDw8WAh8CBQpNQ0EyMS5hc3B4ZBYCZg8VAQNNQ0FkAggPZBYCAgEPDxYCHwIFCFZhdC5hc3B4ZBYCZg8VAQNWQVRkAgkPZBYCAgEPDxYCHwIFDGNhY3Njd2EuYXNweGQWAmYPFQEFQ0EvQ1NkAgoPZBYCAgEPDxYCHwIFDW1vcmVsaW5rLmFzcHhkFgJmDxUBCU1vcmUgTGlua2QCBQ88KwAJAQAPFgQfABYAHwECEmQWJGYPZBYCAgEPDxYCHwIFD0N1c3RvbUFjdHMuYXNweGQWAmYPFQEKQ3VzdG9tIEFjdGQCAQ9kFgICAQ8PFgIfAgUPQ2VudHJhbEFjdC5hc3B4ZBYCZg8VARJDZW50cmFsIEV4Y2lzZSBBY3RkAgIPZBYCAgEPDxYCHwIFD1NlcnZpY2VBY3QuYXNweGQWAmYPFQEPU2VydmljZSBUYXggQWN0ZAIDD2QWAgIBDw8WAh8CBRFJbmNvbWVUYXhBY3QuYXNweGQWAmYPFQENSW5jb21lVGF4IEFjdGQCBA9kFgICAQ8PFgIfAgURV2VhbHRoVGF4QWN0LmFzcHhkFgJmDxUBDVdlYWx0aFRheCBBY3RkAgUPZBYCAgEPDxYCHwIFD0dpZnRUYXhBY3QuYXNweGQWAmYPFQEMR2lmdCBUYXggQWN0ZAIGD2QWAgIBDw8WAh8CBRNJbnRlcmVzdFRheEFjdC5hc3B4ZBYCZg8VARBJbnRlcmVzdCBUYXggQWN0ZAIHD2QWAgIBDw8WAh8CBRZFeHBlbmRpdHVyZVRheEFjdC5hc3B4ZBYCZg8VARNFeHBlbmRpdHVyZSBUYXggQWN0ZAIID2QWAgIBDw8WAh8CBRJDb21wYW5pZXNBY3RzLmFzcHhkFgJmDxUBDUNvbXBhbmllcyBBY3RkAgkPZBYCAgEPDxYCHwIFPU1DQUFjdC5hc3B4P21jYWlkPUNvbXBhbmllcyAoIERvbmF0aW9uIHRvIE5hdGlvbmFsICkgRnVuZCBBY3RkFgJmDxUBK0NvbXBhbmllcyAoIERvbmF0aW9uIHRvIE5hdGlvbmFsICkgRnVuZCBBY3RkAgoPZBYCAgEPDxYCHwIFNE1DQUFjdHMuYXNweD9tY2FpZD1MaW1pdGVkIExpYWJpbGl0eSBQYXJ0bmVyc2hpcCBBY3RkFgJmDxUBIUxpbWl0ZWQgTGlhYmlsaXR5IFBhcnRuZXJzaGlwIEFjdGQCCw9kFgICAQ8PFgIfAgUiTUNBQWN0cy5hc3B4P21jYWlkPVBhcnRuZXJzaGlwIEFjdGQWAmYPFQEPUGFydG5lcnNoaXAgQWN0ZAIMD2QWAgIBDw8WAh8CBSxNQ0FBY3QuYXNweD9tY2FpZD1Tb2NpZXRpZXMgcmVnaXN0cmF0aW9uIEFjdGQWAmYPFQEaU29jaWV0aWVzIHJlZ2lzdHJhdGlvbiBBY3RkAg0PZBYCAgEPDxYCHwIFQU1DQUFjdHMuYXNweD9tY2FpZD1Nb25vcG9saWVzIGFuZCBSZXN0cmljdGl2ZSBUcmFkZSBQcmFjdGljZXMgQWN0ZBYCZg8VAS5Nb25vcG9saWVzIGFuZCBSZXN0cmljdGl2ZSBUcmFkZSBQcmFjdGljZXMgQWN0ZAIOD2QWAgIBDw8WAh8CBSJNQ0FBY3RzLmFzcHg/bWNhaWQ9Q29tcGV0aXRpb24gQWN0ZBYCZg8VAQ9Db21wZXRpdGlvbiBBY3RkAg8PZBYCAgEPDxYCHwIFLE1DQUFjdHMuYXNweD9tY2FpZD1DaGFydGVyZWQgQWNjb3VudGFudHMgQWN0ZBYCZg8VARlDaGFydGVyZWQgQWNjb3VudGFudHMgQWN0ZAIQD2QWAgIBDw8WAh8CBSpNQ0FBY3RzLmFzcHg/bWNhaWQ9Q29tcGFueSBTZWNyZXRhcmllcyBBY3RkFgJmDxUBF0NvbXBhbnkgU2VjcmV0YXJpZXMgQWN0ZAIRD2QWAgIBDw8WAh8CBTFNQ0FBY3RzLmFzcHg/bWNhaWQ9Q29zdCBBbmQgV29ya3MgQWNjb3VudGFudHMgQWN0ZBYCZg8VAR5Db3N0IEFuZCBXb3JrcyBBY2NvdW50YW50cyBBY3RkAgcPPCsACQEADxYEHwAWAB8BAgZkFgxmD2QWAgIBDw8WAh8CBRBDdXN0b21SdWxlcy5hc3B4ZBYCZg8VAQxDdXN0b20gUnVsZXNkAgEPZBYCAgEPDxYCHwIFEUNlbnRyYWxSdWxlcy5hc3B4ZBYCZg8VARRDZW50cmFsIEV4Y2lzZSBSdWxlc2QCAg9kFgICAQ8PFgIfAgURU2VydmljZVJ1bGVzLmFzcHhkFgJmDxUBEVNlcnZpY2UgVGF4IFJ1bGVzZAIDD2QWAgIBDw8WAh8CBRNJbmNvbWVUYXhSdWxlcy5hc3B4ZBYCZg8VAQ9JbmNvbWVUYXggUnVsZXNkAgQPZBYCAgEPDxYCHwIFFU90aGVyRGlyZWN0UnVsZXMuYXNweGQWAmYPFQEWT3RoZXIgRGlyZWN0IFRheCBSdWxlc2QCBQ9kFgICAQ8PFgIfAgUoQ29tcGFueUxhd1J1bGVzLmFzcHg/bWNhaWQ9Q29tcGFueSBSdWxlc2QWAmYPFQESQ29tcGFueSBsYXcgIFJ1bGVzZAIJDzwrAAkBAA8WBB8AFgAfAQIFZBYKZg9kFgICAQ8PFgIfAgUUQ3VzdG9tQ2lyY3VsYXJzLmFzcHhkFgJmDxUBBkN1c3RvbWQCAQ9kFgICAQ8PFgIfAgUVQ2VudHJhbENpcmN1bGFycy5hc3B4ZBYCZg8VAQ5DZW50cmFsIEV4Y2lzZWQCAg9kFgICAQ8PFgIfAgUVU2VydmljZUNpcmN1bGFycy5hc3B4ZBYCZg8VAQtTZXJ2aWNlIFRheGQCAw9kFgICAQ8PFgIfAgUXSW5jb21lVGF4Q2lyY3VsYXJzLmFzcHhkFgJmDxUBCUluY29tZVRheGQCBA9kFgICAQ8PFgIfAgUsQ29tcGFueUxhd1J1bGVzLmFzcHg/bWNhaWQ9Q29tcGFueSBDaXJjdWxhcnNkFgJmDxUBFUNvbXBhbnkgbGF3IENpcmN1bGFyc2QCCw88KwAJAQAPFgQfABYAHwECBWQWCmYPZBYCAgEPDxYCHwIFGEN1c3RvbU5vdGlmaWNhdGlvbnMuYXNweGQWAmYPFQEGQ3VzdG9tZAIBD2QWAgIBDw8WAh8CBR9DZW50cmFsRXhjaXNlTm90aWZpY2F0aW9ucy5hc3B4ZBYCZg8VAQ5DZW50cmFsIEV4Y2lzZWQCAg9kFgICAQ8PFgIfAgUbU2VydmljZVRheE5vdGlmaWNhdGlvbi5hc3B4ZBYCZg8VAQtTZXJ2aWNlIFRheGQCAw9kFgICAQ8PFgIfAgURTm90aWZpY2F0aW9uLmFzcHhkFgJmDxUBCUluY29tZVRheGQCBA9kFgICAQ8PFgIfAgUuQ29tcGFueUxhd1J1bGVzLmFzcHg/bWNhaWQ9Q29tcGFueSBOb3RpZmFjdGlvbmQWAmYPFQEYQ29tcGFueSBsYXcgIE5vdGlmYWN0aW9uZAINDzwrAAkBAA8WBB8AFgAfAQIHZBYOZg9kFgICAQ8PFgIfAgUPQ3VzdG9tRm9ybS5hc3B4ZBYCZg8VAQpDdXN0b20gVGF4ZAIBD2QWAgIBDw8WAh8CBRBDZW50cmFsRm9ybS5hc3B4ZBYCZg8VAQ5DZW50cmFsIEV4Y2lzZWQCAg9kFgICAQ8PFgIfAgUQU2VydmljZUZvcm0uYXNweGQWAmYPFQELU2VydmljZSBUYXhkAgMPZBYCAgEPDxYCHwIFE0luY29tZVRheEZvcm1zLmFzcHhkFgJmDxUBCkluY29tZSBUYXhkAgQPZBYCAgEPDxYCHwIFDldlYWx0aFRheC5hc3B4ZBYCZg8VAQpXZWFsdGggVGF4ZAIFD2QWAgIBDw8WAh8CBQ1Sb2NGb3Jtcy5hc3B4ZBYCZg8VAQNST0NkAgYPZBYCAgEPDxYCHwIFDUxMcEZvcm1zLmFzcHhkFgJmDxUBI0xpbWl0ZWQgTGlhYmlsaXR5IFBhcnRuZXJzaGlwIChMTFApZAIPDzwrAAkBAA8WBB8AFgAfAQILZBYWZg9kFgICAQ8PFgIfAgUodXRpbGl0aWVzLmFzcHg/c2VydmU9UmF0ZXMgb2YgSW5jb21lIFRheGQWAmYPFQETUmF0ZXMgb2YgSW5jb21lIFRheGQCAQ9kFgICAQ8PFgIfAgUwdXRpbGl0aWVzLmFzcHg/c2VydmU9VERTIFJhdGVzIGZvciBOLlIuSSB1L3MgMTk1ZBYCZg8VARtURFMgUmF0ZXMgZm9yIE4uUi5JIHUvcyAxOTVkAgIPZBYCAgEPDxYCHwIFIXV0aWxpdGllcy5hc3B4P3NlcnZlPVJhdGVzIG9mIFREU2QWAmYPFQEMUmF0ZXMgb2YgVERTZAIDD2QWAgIBDw8WAh8CBSp1dGlsaXRpZXMuYXNweD9zZXJ2ZT1SYXRlcyBvZiBOU0MgSW50ZXJlc3RkFgJmDxUBFVJhdGVzIG9mIE5TQyBJbnRlcmVzdGQCBA9kFgICAQ8PFgIfAgU/dXRpbGl0aWVzLmFzcHg/c2VydmU9UmF0ZXMgb2YgRGVwcmVjaWF0aW9uIFVuZGVyIEluY29tZSBUYXggQWN0ZBYCZg8VASpSYXRlcyBvZiBEZXByZWNpYXRpb24gVW5kZXIgSW5jb21lIFRheCBBY3RkAgUPZBYCAgEPDxYCHwIFPHV0aWxpdGllcy5hc3B4P3NlcnZlPVJhdGVzIG9mIERlcHJlY2lhdGlvbiBVbmRlciBDb21wYW55IEFjdGQWAmYPFQEnUmF0ZXMgb2YgRGVwcmVjaWF0aW9uIFVuZGVyIENvbXBhbnkgQWN0ZAIGD2QWAgIBDw8WAh8CBSl1dGlsaXRpZXMuYXNweD9zZXJ2ZT1Db3N0IEluZmxhdGlvbiBJbmRleGQWAmYPFQEUQ29zdCBJbmZsYXRpb24gSW5kZXhkAgcPZBYCAgEPDxYCHwIFJnV0aWxpdGllcy5hc3B4P3NlcnZlPVJPQyBGZWUgU3RydWN0dXJlZBYCZg8VARFST0MgRmVlIFN0cnVjdHVyZWQCCA9kFgICAQ8PFgIfAgUqdXRpbGl0aWVzLmFzcHg/c2VydmU9R29sZCBhbmQgU2lsdmVyIFJhdGVzZBYCZg8VARVHb2xkIGFuZCBTaWx2ZXIgUmF0ZXNkAgkPZBYCAgEPDxYCHwIFH3V0aWxpdGllcy5hc3B4P3NlcnZlPU1JQ1IgQ29kZXNkFgJmDxUBCk1JQ1IgQ29kZXNkAgoPZBYCAgEPDxYCHwIFH3V0aWxpdGllcy5hc3B4P3NlcnZlPUlGU0MgQ29kZXNkFgJmDxUBCklGU0MgQ29kZXNkAhEPDxYEHgRUZXh0BQ9NYWhhcmFzaHRyYSBWQVQfAgUOc3RhdGVzdmF0LmFzcHhkZAITDzwrAAkBAA8WBB8AFgAfAQILZBYWZg9kFgICAQ8PFgIfAgUYc3RhdGVzdmF0LmFzcHg/c3RhdGVpZD0xZBYCZg8VAQlKaGFya2hhbmRkAgEPZBYCAgEPDxYCHwIFGHN0YXRlc3ZhdC5hc3B4P3N0YXRlaWQ9MmQWAmYPFQEDQSBQZAICD2QWAgIBDw8WAh8CBRhzdGF0ZXN2YXQuYXNweD9zdGF0ZWlkPTNkFgJmDxUBBUFzc2FtZAIDD2QWAgIBDw8WAh8CBRhzdGF0ZXN2YXQuYXNweD9zdGF0ZWlkPTRkFgJmDxUBBUJpaGFyZAIED2QWAgIBDw8WAh8CBRhzdGF0ZXN2YXQuYXNweD9zdGF0ZWlkPTVkFgJmDxUBCkNoYW5kaWdhcmhkAgUPZBYCAgEPDxYCHwIFGHN0YXRlc3ZhdC5hc3B4P3N0YXRlaWQ9NmQWAmYPFQEFRGVsaGlkAgYPZBYCAgEPDxYCHwIFGHN0YXRlc3ZhdC5hc3B4P3N0YXRlaWQ9N2QWAmYPFQEDR29hZAIHD2QWAgIBDw8WAh8CBRhzdGF0ZXN2YXQuYXNweD9zdGF0ZWlkPThkFgJmDxUBB0d1amFyYXRkAggPZBYCAgEPDxYCHwIFGHN0YXRlc3ZhdC5hc3B4P3N0YXRlaWQ9OWQWAmYPFQEHSGFyeWFuYWQCCQ9kFgICAQ8PFgIfAgUZc3RhdGVzdmF0LmFzcHg/c3RhdGVpZD0xMGQWAmYPFQEISGltYWNoYWxkAgoPZBYCAgEPDxYCHwIFDG1vcmV2YXQuYXNweGQWAmYPFQEITW9yZSBWQVRkAhUPPCsACQEADxYEHwAWAB8BAgpkFhRmD2QWAgIBDw8WAh8CBSFDYWxjdWxhdG9ycy1LaXNhblZpa2FzUGF0cmFzLmFzcHhkFgJmDxUBEUtpc2FuIFZpa2FzIFBhdHJhZAIBD2QWAgIBDw8WAh8CBSJDYWxjdWxhdG9ycy1HZXROb09mSW5zdGFsbWVudC5hc3B4ZBYCZg8VARlHZXQgTnVtYmVyIE9mIEluc3RhbGxtZW50ZAICD2QWAgIBDw8WAh8CBRRDYWxjdWxhdG9ycy1FTUkuYXNweGQWAmYPFQEhRXF1YXRlZCBNb250aGx5IEluc3RhbGxtZW50IChFTUkpZAIDD2QWAgIBDw8WAh8CBRRDYWxjdWxhdG9ycy1IUkEuYXNweGQWAmYPFQEaSG91c2UgUmVudCBBbGxvd2FuY2UgKEhSQSlkAgQPZBYCAgEPDxYCHwIFFENhbGN1bGF0b3JzLUZCVC5hc3B4ZBYCZg8VARhGcmluZ2UgQmVuZWZpdCBUYXggKEZCVClkAgUPZBYCAgEPDxYCHwIFJENhbGN1bGF0b3JzLUluY29tZVRheENhbGN1bGF0b3IuYXNweGQWAmYPFQEVSW5jb21lIFRheCBDYWxjdWxhdG9yZAIGD2QWAgIBDw8WAh8CBRlDYWxjdWxhdG9ycy1Ib21lTG9hbi5hc3B4ZBYCZg8VARRIb21lIExvYW4gQ2FsY3VsYXRvcmQCBw9kFgICAQ8PFgIfAgUZQ2FsY3VsYXRvcnMtQXV0b0xvYW4uYXNweGQWAmYPFQEUQXV0byBMb2FuIENhbGN1bGF0b3JkAggPZBYCAgEPDxYCHwIFHkNhbGN1bGF0b3JzLVZBVENhbGN1bGF0b3IuYXNweGQWAmYPFQEgVmFsdWUgQWRkZWQgVGF4IChWQVQpIENhbGN1bGF0b3JkAgkPZBYCAgEPDxYCHwIFFENhbGN1bGF0b3JzLU5TQy5hc3B4ZBYCZg8VASJOYXRpb25hbCBTYXZpbmcgQ2VydGlmaWNhdGVzIChOU0MpZGQHJfB6ajsgAPwczrH77YYgCo7OaQ==" />
+<!--</div>
+
+    <div id="MainContaner">
+        <div class="MainIner">
+            <div id="Header">
+                <div class="HeaderTop">
+                    <div class="Logo">
+                        <a href="#">
+                            <img src="Temp5/images/logo.png" alt="" /></a>
+                        <h1>
+                            B. N. Kedia & Co.</br> <span>Chartered Accountants</span></h1>
+                    </div>
+                    <div class="Rtcontactbt">
+                        <span class="contact"><a href="ContactUs.aspx">Contact Us</a></span> <span class="contact">
+                            <a href="Careers.aspx">Careers</a></span> <span class="loginar"><a href="http://webmail.bnkedia.com/"
+                                target="_blank">Mail Login</a></span>
+                        
+                        <span class="socialmd"><a href="https://www.facebook.com/pages/BNKedia-Co/131649366910249?ref=ts&fref=ts"
+                            target="_blank">
+                            <img src="Temp5/images/flink.png" alt="" /></a><a href="" target="_blank"><img src="Temp5/images/tlink.png"
+                                alt="" /></a><a href="" target="_blank"><img src="Temp5/images/google-plus.png" alt="" /></a></span>
+                    </div>
+                </div>
+                <div id="NavMain">
+                    <div id="menubarmain" class="NavMenu">
+                        <ul>
+                        <li><a href="Home.aspx">Home</a></li>
+                         <li onmouseover="showmenu('tutorials10')" onmouseout="hidemenu('tutorials10')"><a
+                                href="AboutUs.aspx">About Us</a>
+                                <ul class="tutorials" id="tutorials10">
+                                    <li class="menu"><a href="Team.aspx">Partners </a></li>
+                                    <li class="menu"><a href="KnowledgeTeam.aspx">Knowledge Team </a></li>
+                                    <li class="menu"><a href="Branches.aspx">Offices </a></li>
+                                </ul>
+                            </li>
+                        
+                        
+                    
+                        <li onmouseover="showmenu('tutor12')" onmouseout="hidemenu('tutor12')"><a href="#">
+                            Services</a>
+                            <ul class="tutorials" id="tutor12">
+                                <table id="ctl00_DataListService" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListService_ctl00_HyperService" class="menulinks" href="Services.aspx?serve=Audit  Assurance">Audit  Assurance</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListService_ctl01_HyperService" class="menulinks" href="Services.aspx?serve=Taxation">Taxation</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListService_ctl02_HyperService" class="menulinks" href="Services.aspx?serve=MCA Filing  Compliance">MCA Filing  Compliance</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListService_ctl03_HyperService" class="menulinks" href="Services.aspx?serve=Corporate Advisory  Consulting">Corporate Advisory  Consulting</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListService_ctl04_HyperService" class="menulinks" href="Services.aspx?serve=Investment Banking">Investment Banking</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListService_ctl05_HyperService" class="menulinks" href="Services.aspx?serve=Book Keeping Accounting  Business Support">Book Keeping Accounting  Business Support</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListService_ctl06_HyperService" class="menulinks" href="Services.aspx?serve=NRI Services">NRI Services</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListService_ctl07_HyperService" class="menulinks" href="Services.aspx?serve=Project financing ">Project financing </a></li>
+                                        </td>
+	</tr>
+</table>
+                            </ul>
+                        </li>
+                        
+                        
+                        
+                      
+                        
+                        <li onmouseover="showmenu('tutor122')" onmouseout="hidemenu('tutor122')"><a href="#">
+                            Important Links</a>
+                            <ul class="tutorials" id="tutor122">
+                                <table id="ctl00_DataListImpLinks" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl00_HyperTools" href="Pan.aspx">PAN</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl01_HyperTools" href="Tan.aspx">TAN</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl02_HyperTools" href="E-PaymentOnline.aspx">E-Payment Online</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl03_HyperTools" href="IncomeTax.aspx">IncomeTax</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl04_HyperTools" href="CBEC.aspx">CBEC</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl05_HyperTools" href="PFESI.aspx">PF & ESI</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl06_HyperTools" href="ExciseandServiceTax.aspx">Excise and Service Tax</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl07_HyperTools" href="MCA21.aspx">MCA</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl08_HyperTools" href="Vat.aspx">VAT</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl09_HyperTools" href="cacscwa.aspx">CA/CS</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListImpLinks_ctl10_HyperTools" href="morelink.aspx">More Link</a>
+                                        </td>
+	</tr>
+</table>
+                            </ul>
+                        </li>
+                        
+                        
+                        
+                        
+                     
+                        
+                         
+                        
+                        <li onmouseover="showmenu('tutor')" onmouseout="hidemenu('tutor')"><a href="#">
+                            Knowledge Base </a>
+                            <ul class="tutorials" id="tutor">
+                                <li onmouseover="showmenu('tutor7')" onmouseout="hidemenu('tutor7')"><a href="#">Acts</a>
+                                    <ul class="tutnv" id="tutor7">
+                                        <li>
+                                            <table id="ctl00_DataListActs" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl00_HyperActs" href="CustomActs.aspx">Custom Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl01_HyperActs" href="CentralAct.aspx">Central Excise Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl02_HyperActs" href="ServiceAct.aspx">Service Tax Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl03_HyperActs" href="IncomeTaxAct.aspx">IncomeTax Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl04_HyperActs" href="WealthTaxAct.aspx">WealthTax Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl05_HyperActs" href="GiftTaxAct.aspx">Gift Tax Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl06_HyperActs" href="InterestTaxAct.aspx">Interest Tax Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl07_HyperActs" href="ExpenditureTaxAct.aspx">Expenditure Tax Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl08_HyperActs" href="CompaniesActs.aspx">Companies Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl09_HyperActs" href="MCAAct.aspx?mcaid=Companies ( Donation to National ) Fund Act">Companies ( Donation to National ) Fund Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl10_HyperActs" href="MCAActs.aspx?mcaid=Limited Liability Partnership Act">Limited Liability Partnership Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl11_HyperActs" href="MCAActs.aspx?mcaid=Partnership Act">Partnership Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl12_HyperActs" href="MCAAct.aspx?mcaid=Societies registration Act">Societies registration Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl13_HyperActs" href="MCAActs.aspx?mcaid=Monopolies and Restrictive Trade Practices Act">Monopolies and Restrictive Trade Practices Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl14_HyperActs" href="MCAActs.aspx?mcaid=Competition Act">Competition Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl15_HyperActs" href="MCAActs.aspx?mcaid=Chartered Accountants Act">Chartered Accountants Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl16_HyperActs" href="MCAActs.aspx?mcaid=Company Secretaries Act">Company Secretaries Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListActs_ctl17_HyperActs" href="MCAActs.aspx?mcaid=Cost And Works Accountants Act">Cost And Works Accountants Act</a>
+                                                </td>
+	</tr>
+</table></li>
+                                    </ul>
+                                </li>
+                                <li onmouseover="showmenu('tutor2')" onmouseout="hidemenu('tutor2')"><a href="#">Rules</a>
+                                    <ul class="tutnv" id="tutor2">
+                                        <li>
+                                            <table id="ctl00_DataListRules" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                                    <a id="ctl00_DataListRules_ctl00_HyperRules" href="CustomRules.aspx">Custom Rules</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListRules_ctl01_HyperRules" href="CentralRules.aspx">Central Excise Rules</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListRules_ctl02_HyperRules" href="ServiceRules.aspx">Service Tax Rules</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListRules_ctl03_HyperRules" href="IncomeTaxRules.aspx">IncomeTax Rules</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListRules_ctl04_HyperRules" href="OtherDirectRules.aspx">Other Direct Tax Rules</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListRules_ctl05_HyperRules" href="CompanyLawRules.aspx?mcaid=Company Rules">Company law  Rules</a>
+                                                </td>
+	</tr>
+</table></li>
+                                    </ul>
+                                </li>
+                                <li onmouseover="showmenu('tutor3')" onmouseout="hidemenu('tutor3')"><a href="#">Circulars</a>
+                                    <ul class="tutnv" id="tutor3">
+                                        <li>
+                                            <table id="ctl00_DataListCirculars" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                                    <a id="ctl00_DataListCirculars_ctl00_HyperRules" href="CustomCirculars.aspx">Custom</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListCirculars_ctl01_HyperRules" href="CentralCirculars.aspx">Central Excise</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListCirculars_ctl02_HyperRules" href="ServiceCirculars.aspx">Service Tax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListCirculars_ctl03_HyperRules" href="IncomeTaxCirculars.aspx">IncomeTax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListCirculars_ctl04_HyperRules" href="CompanyLawRules.aspx?mcaid=Company Circulars">Company law Circulars</a>
+                                                </td>
+	</tr>
+</table></li>
+                                    </ul>
+                                </li>
+                                <li onmouseover="showmenu('tutor4')" onmouseout="hidemenu('tutor4')"><a href="#">Notification</a>
+                                    <ul class="tutnv" id="tutor4">
+                                        <li>
+                                            <table id="ctl00_DataListNotification" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                                    <a id="ctl00_DataListNotification_ctl00_HyperRules" href="CustomNotifications.aspx">Custom</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListNotification_ctl01_HyperRules" href="CentralExciseNotifications.aspx">Central Excise</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListNotification_ctl02_HyperRules" href="ServiceTaxNotification.aspx">Service Tax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListNotification_ctl03_HyperRules" href="Notification.aspx">IncomeTax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListNotification_ctl04_HyperRules" href="CompanyLawRules.aspx?mcaid=Company Notifaction">Company law  Notifaction</a>
+                                                </td>
+	</tr>
+</table></li>
+                                    </ul>
+                                </li>
+                                <li onmouseover="showmenu('tutor5')" onmouseout="hidemenu('tutor5')"><a href="#">Forms</a>
+                                    <ul class="tutnv" id="tutor5">
+                                        <li>
+                                            <table id="ctl00_DataListForms" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                                    <a id="ctl00_DataListForms_ctl00_HyperRules" href="CustomForm.aspx">Custom Tax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListForms_ctl01_HyperRules" href="CentralForm.aspx">Central Excise</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListForms_ctl02_HyperRules" href="ServiceForm.aspx">Service Tax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListForms_ctl03_HyperRules" href="IncomeTaxForms.aspx">Income Tax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListForms_ctl04_HyperRules" href="WealthTax.aspx">Wealth Tax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListForms_ctl05_HyperRules" href="RocForms.aspx">ROC</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListForms_ctl06_HyperRules" href="LLpForms.aspx">Limited Liability Partnership (LLP)</a>
+                                                </td>
+	</tr>
+</table></li>
+                                    </ul>
+                                </li>
+                                 <li onmouseover="showmenu('tutor15')" onmouseout="hidemenu('tutor15')"><a href="#">Tools</a>
+                                    <ul class="tutnv" id="tutor15">
+                                        <li>
+                                           <table id="ctl00_DataListTools" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl00_HyperTools" href="utilities.aspx?serve=Rates of Income Tax">Rates of Income Tax</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl01_HyperTools" href="utilities.aspx?serve=TDS Rates for N.R.I u/s 195">TDS Rates for N.R.I u/s 195</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl02_HyperTools" href="utilities.aspx?serve=Rates of TDS">Rates of TDS</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl03_HyperTools" href="utilities.aspx?serve=Rates of NSC Interest">Rates of NSC Interest</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl04_HyperTools" href="utilities.aspx?serve=Rates of Depreciation Under Income Tax Act">Rates of Depreciation Under Income Tax Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl05_HyperTools" href="utilities.aspx?serve=Rates of Depreciation Under Company Act">Rates of Depreciation Under Company Act</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl06_HyperTools" href="utilities.aspx?serve=Cost Inflation Index">Cost Inflation Index</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl07_HyperTools" href="utilities.aspx?serve=ROC Fee Structure">ROC Fee Structure</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl08_HyperTools" href="utilities.aspx?serve=Gold and Silver Rates">Gold and Silver Rates</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl09_HyperTools" href="utilities.aspx?serve=MICR Codes">MICR Codes</a>
+                                                </td>
+	</tr><tr>
+		<td>
+                                                    <a id="ctl00_DataListTools_ctl10_HyperTools" href="utilities.aspx?serve=IFSC Codes">IFSC Codes</a>
+                                                </td>
+	</tr>
+</table></li>
+                                    </ul>
+                                </li>
+                               
+                               
+                                
+                            </ul>
+                        </li>
+                      <li>  <a id="ctl00_HyperVatState" href="statesvat.aspx">Maharashtra VAT</a></li>
+                 <li onmouseover="showmenu('tutorials11')" onmouseout="hidemenu('tutorials11')"><a
+                                href="morevat.aspx">Other VAT</a>
+                                <ul class="tutorials" id="tutorials11">
+                                    <table id="ctl00_DataListVats" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl00_HyperRules" class="menulinks" href="statesvat.aspx?stateid=1">Jharkhand</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl01_HyperRules" class="menulinks" href="statesvat.aspx?stateid=2">A P</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl02_HyperRules" class="menulinks" href="statesvat.aspx?stateid=3">Assam</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl03_HyperRules" class="menulinks" href="statesvat.aspx?stateid=4">Bihar</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl04_HyperRules" class="menulinks" href="statesvat.aspx?stateid=5">Chandigarh</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl05_HyperRules" class="menulinks" href="statesvat.aspx?stateid=6">Delhi</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl06_HyperRules" class="menulinks" href="statesvat.aspx?stateid=7">Goa</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl07_HyperRules" class="menulinks" href="statesvat.aspx?stateid=8">Gujarat</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl08_HyperRules" class="menulinks" href="statesvat.aspx?stateid=9">Haryana</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl09_HyperRules" class="menulinks" href="statesvat.aspx?stateid=10">Himachal</a></li>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <li class="menu">
+                                                <a id="ctl00_DataListVats_ctl10_HyperRules" class="menulinks" href="morevat.aspx">More VAT</a></li>
+                                        </td>
+	</tr>
+</table>
+                                </ul>
+                            </li>
+                       
+                        <li onmouseover="showmenu('tutor26')" onmouseout="hidemenu('tutor26')"><a href="#">
+                            Calculator</a>
+                            <ul class="tutorials" id="tutor26">
+                                <li>
+                                    <table id="ctl00_DataListCalculator" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl00_HyperRules" href="Calculators-KisanVikasPatras.aspx">Kisan Vikas Patra</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl01_HyperRules" href="Calculators-GetNoOfInstalment.aspx">Get Number Of Installment</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl02_HyperRules" href="Calculators-EMI.aspx">Equated Monthly Installment (EMI)</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl03_HyperRules" href="Calculators-HRA.aspx">House Rent Allowance (HRA)</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl04_HyperRules" href="Calculators-FBT.aspx">Fringe Benefit Tax (FBT)</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl05_HyperRules" href="Calculators-IncomeTaxCalculator.aspx">Income Tax Calculator</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl06_HyperRules" href="Calculators-HomeLoan.aspx">Home Loan Calculator</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl07_HyperRules" href="Calculators-AutoLoan.aspx">Auto Loan Calculator</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl08_HyperRules" href="Calculators-VATCalculator.aspx">Value Added Tax (VAT) Calculator</a>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <a id="ctl00_DataListCalculator_ctl09_HyperRules" href="Calculators-NSC.aspx">National Saving Certificates (NSC)</a>
+                                        </td>
+	</tr>
+</table>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                          <li><a href="Newsfeed.aspx">NewsFeed</a></li>
+                       
+                          
+                       <li style="background:none;"><a href="http://www.bnkedia.com/blog">Blogs</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="MiddlePart">
+                <div class="MiddleInner">
+                    <div class="Banner" style="width: 1000px">
+                        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+                            width="1000" height="200">
+                            <param name="movie" value="Temp5/images/flash=750-1.swf" />
+                            <param name="quality" value="high" />
+                            <param name="wmode" value="transparent">
+                            <embed src="Temp5/images/flash=750-1.swf" wmode="transparent" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                                type="application/x-shockwave-flash" width="1000" height="200"></embed>
+                        </object>
+                        <!--<img src="images/banner.jpg" alt="" />-->
+                    </div>
+                    <div class="Midnewctbt-blog">
+                        
+ <table style="width: 100%">
+        <tr style="width: 100%;height:95%">
+            <td style="width: 100%;height:95%">
+             <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr valign="top" style="width: 100%">
+                    <td valign="top" style="width:3%" >
+
+                    </td>
+                    <td valign="top" style="width:94%" >
+                        <html >
+<head id="Head1"><title>
+	VAT Calculator
+</title>
+<link href="images/VAT.css" rel="stylesheet" type="text/css" />   
+    <script type="text/javascript" language="javascript" src="images/VAT.js"></script>
+    VAT Calculator
+</head>
+<body style="vertical-align:top;">
+    <form name="form1" method="post" action="Default.aspx" id="form1">
+<div>
+
+</div>
+
+      <iframe id='ifrmPrint' src='#'style="width:0px; height:0px;"></iframe>  
+      <div id ="printArea">
+      <table width="100%">
+      <tr>
+      <td width="15%"></td>
+      
+      <td align="center" width="70%">
+       <table border="1" cellpadding="1" cellspacing="1" bordercolor="#000000" width="100%" >
+                <tr valign="top">
+
+                    <td align="left" bgcolor="#000000" style="text-align: center" colspan="7">
+                   <h2 class="heading">
+                       VAT Calculator</h2></td>
+                </tr>
+                <tr valign="top" id ="netWorth" align="center" >
+                    <td align="center" colspan="2"   class="dollar" style="text-align: left">
+                      <span class="maincontent1" ><strong>Dealer's Name :</strong></span>   </td>
+
+                    <td class="dollar" colspan="2" align="left">   <input name="txtDealerName" type="text" id="txtDealerName" class="inputbox1" style="width:411px;" /></td>  
+                    <td align="center" class="dollar" style="text-align: right;">
+                      <span class="maincontent1" ><strong>TIN :</strong></span> </td>
+                    
+                    <td class="dollar" colspan="2" align="right" style="text-align: left"> <input name="txtTIN" type="text" id="txtTIN" class="inputbox" style="width:102px;" />
+                        &nbsp; &nbsp; &nbsp;&nbsp;
+                            
+                         </td>
+
+                       
+                </tr>
+            </table>
+        
+        <table id="tab_SDetails" border="1"  cellpadding="1" cellspacing="1"
+            width="100%" bordercolor="#000000">
+            <tr >
+                <td align="center" colspan="7" class="dollar"  bgcolor="#000000" >
+                     <span class="mainheading">
+                        Sales Details</span>
+                </td>
+
+                
+            </tr>            
+            <tr bgcolor="#ffffff">
+                <td align="left"  >
+                    <span class="maincontent1"><strong>Sr.No.</strong></span></td>
+                <td align="center" >
+                    <span class="maincontent1"><strong>VAT Rate.(%)</strong></span></td>
+                <td align="left" style="text-align: center"  >
+                    <span class="maincontent1"><strong>Amount(Rs.)</strong></span></td>
+
+                <td align="left" style="text-align: center"  >
+                    <span class="maincontent1"><strong>VAT Inclusive</strong></span></td>
+                <td align="left" style="text-align: center"  >
+                    <span class="maincontent1"><strong>Sale Price(Rs.)</strong></span></td>
+                <td align="left" style="text-align: center"  >
+                    <span class="maincontent1"><strong>VAT(Rs.)</strong></span></td>
+                <td align="left" style="text-align: center"  >
+
+                    <span class="maincontent1"><strong>Gross Total(Rs.)</strong></span></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>1.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">                    
+                    <select name="ddlSVAT_Rate1" id="ddlSVAT_Rate1" onchange="CalculateAll(2);" style="height:20px;width:102px;text-align:justify;display:block;">
+	<option value="0">1</option>
+
+	<option value="1">2</option>
+	<option value="2">4</option>
+	<option selected="selected" value="3">5</option>
+	<option value="4">10</option>
+	<option value="5">12.5</option>
+	<option value="6">20</option>
+
+</select>                             
+            
+                    </td>   
+                        
+                <td align="center" class="dollar" style="width: 106px">
+                   
+                    <input name="txtSAmount1" type="text" maxlength="15" id="txtSAmount1" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAll(2);" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkSVatInclusive1" type="checkbox" name="chkSVatInclusive1" onclick="CalculateAll(2);" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSSalePrice1" type="text" readonly="readonly" id="txtSSalePrice1" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSVatAmount1" type="text" readonly="readonly" id="txtSVatAmount1" class="inputbox" style="width:102px;" /></td>
+
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSTotalAmount1" type="text" readonly="readonly" id="txtSTotalAmount1" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>2.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <select name="ddlSVAT_Rate2" id="ddlSVAT_Rate2" onchange="CalculateAll(3);" style="height:20px;width:102px;">
+	<option value="0">1</option>
+
+	<option value="1">2</option>
+	<option selected="selected" value="2">4</option>
+	<option value="3">5</option>
+	<option value="4">10</option>
+	<option value="5">12.5</option>
+	<option value="6">20</option>
+
+</select></td>               
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSAmount2" type="text" maxlength="15" id="txtSAmount2" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAll(3);" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkSVatInclusive2" type="checkbox" name="chkSVatInclusive2" onclick="CalculateAll(3);" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSSalePrice2" type="text" readonly="readonly" id="txtSSalePrice2" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSVatAmount2" type="text" readonly="readonly" id="txtSVatAmount2" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtSTotalAmount2" type="text" readonly="readonly" id="txtSTotalAmount2" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>3.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <select name="ddlSVAT_Rate3" id="ddlSVAT_Rate3" onchange="CalculateAll(4);" style="height:20px;width:102px;">
+	<option value="0">1</option>
+
+	<option selected="selected" value="1">2</option>
+	<option value="2">4</option>
+	<option value="3">5</option>
+	<option value="4">10</option>
+	<option value="5">12.5</option>
+	<option value="6">20</option>
+
+</select></td>               
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSAmount3" type="text" maxlength="15" id="txtSAmount3" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAll(4);" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkSVatInclusive3" type="checkbox" name="chkSVatInclusive3" onclick="CalculateAll(4);" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSSalePrice3" type="text" readonly="readonly" id="txtSSalePrice3" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSVatAmount3" type="text" readonly="readonly" id="txtSVatAmount3" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtSTotalAmount3" type="text" readonly="readonly" id="txtSTotalAmount3" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>4.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <select name="ddlSVAT_Rate4" id="ddlSVAT_Rate4" onchange="CalculateAll(5);" style="height:20px;width:102px;">
+	<option value="0">1</option>
+
+	<option value="1">2</option>
+	<option value="2">4</option>
+	<option value="3">5</option>
+	<option value="4">10</option>
+	<option selected="selected" value="5">12.5</option>
+	<option value="6">20</option>
+
+</select></td>                  
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSAmount4" type="text" maxlength="15" id="txtSAmount4" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAll(5);" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkSVatInclusive4" type="checkbox" name="chkSVatInclusive4" onclick="CalculateAll(5);" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSSalePrice4" type="text" readonly="readonly" id="txtSSalePrice4" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSVatAmount4" type="text" readonly="readonly" id="txtSVatAmount4" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtSTotalAmount4" type="text" readonly="readonly" id="txtSTotalAmount4" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>5.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="TextBox1" type="text" id="TextBox1" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAll(6,'otxt');" style="width:102px;" /></td>               
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSAmount5" type="text" maxlength="15" id="txtSAmount5" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAll(6,'otxt');" style="width:102px;" /></td>
+
+                <td align="center" >
+                    <input id="chkSVatInclusive5" type="checkbox" name="chkSVatInclusive5" onclick="CalculateAll(6,'otxt');" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSSalePrice5" type="text" readonly="readonly" id="txtSSalePrice5" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSVatAmount5" type="text" readonly="readonly" id="txtSVatAmount5" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSTotalAmount5" type="text" readonly="readonly" id="txtSTotalAmount5" class="inputbox" style="width:102px;" /></td>
+            </tr>
+
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>6.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="TextBox2" type="text" id="TextBox2" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAll(7,'otxt');" style="width:102px;" /></td>               
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSAmount6" type="text" maxlength="15" id="txtSAmount6" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAll(7,'otxt');" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkSVatInclusive6" type="checkbox" name="chkSVatInclusive6" onclick="CalculateAll(7,'otxt');" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtSSalePrice6" type="text" readonly="readonly" id="txtSSalePrice6" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSVatAmount6" type="text" readonly="readonly" id="txtSVatAmount6" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSTotalAmount6" type="text" readonly="readonly" id="txtSTotalAmount6" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td></td> 
+                <td align="center" style="width: 40px">
+
+                    <span class="maincontent1"><strong>Total</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSFinalAmount" type="text" id="txtSFinalAmount" class="inputbox" style="width:102px;" /></td>
+                <td></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSFinalSalePrice" type="text" readonly="readonly" id="txtSFinalSalePrice" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtSFinalVatAmount" type="text" readonly="readonly" id="txtSFinalVatAmount" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtSFinalTotalAmount" type="text" readonly="readonly" id="txtSFinalTotalAmount" class="inputbox" style="width:102px;" /></td>
+            </tr>          
+        </table>
+        
+        <table width="100%">
+        <tr>
+        <td colspan="7">
+        
+        </td>
+        </tr>
+                <tr>
+
+        <td colspan="7">
+        
+        </td>
+        </tr>
+        
+        </table>
+        
+        <table id="tab_PDetails" border="1"  cellpadding="1" cellspacing="1"
+            width="100%" bordercolor="#000000">
+            <tr >
+                <td align="center" colspan="7" class="dollar"  bgcolor="#000000" >
+                     <span class="mainheading">
+                        Purchase Details</span>
+
+                </td>
+                
+            </tr>            
+            <tr bgcolor="#ffffff">
+                <td align="left"  >
+                    <span class="maincontent1"><strong>Sr.No.</strong></span></td>
+                <td align="center" >
+                    <span class="maincontent1"><strong>VAT Rate.(%)</strong></span></td>
+                <td align="left" style="text-align: center"  >
+
+                    <span class="maincontent1"><strong>Amount(Rs.)</strong></span></td>
+                <td align="left" style="text-align: center"  >
+                    <span class="maincontent1"><strong>VAT Inclusive</strong></span></td>
+                <td align="left" style="text-align: center"  >
+                    <span class="maincontent1"><strong>Sale Price(Rs.)</strong></span></td>
+                <td align="left" style="text-align: center"  >
+                    <span class="maincontent1"><strong>Input Tax Credit(Rs.)</strong></span></td>
+
+                <td align="left" style="text-align: center"  >
+                    <span class="maincontent1"><strong>Gross Total(Rs.)</strong></span></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>1.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">                    
+                    <select name="ddlPVAT_Rate1" id="ddlPVAT_Rate1" onchange="CalculateAllP(2);" style="height:20px;width:102px;">
+	<option value="0">1</option>
+
+	<option value="1">2</option>
+	<option value="2">4</option>
+	<option selected="selected" value="3">5</option>
+	<option value="4">10</option>
+	<option value="5">12.5</option>
+	<option value="6">20</option>
+
+</select></td>               
+                <td align="center" class="dollar" style="width: 106px">                   
+                    <input name="txtPAmount1" type="text" maxlength="15" id="txtPAmount1" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAllP(2);" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkPVatInclusive1" type="checkbox" name="chkPVatInclusive1" checked="checked" onclick="CalculateAllP(2);" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPSalePrice1" type="text" readonly="readonly" id="txtPSalePrice1" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPVatAmount1" type="text" readonly="readonly" id="txtPVatAmount1" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtPTotalAmount1" type="text" readonly="readonly" id="txtPTotalAmount1" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>2.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <select name="ddlPVAT_Rate2" id="ddlPVAT_Rate2" onchange="CalculateAllP(3);" style="height:20px;width:102px;">
+	<option value="0">1</option>
+
+	<option value="1">2</option>
+	<option selected="selected" value="2">4</option>
+	<option value="3">5</option>
+	<option value="4">10</option>
+	<option value="5">12.5</option>
+	<option value="6">20</option>
+
+</select></td>               
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPAmount2" type="text" maxlength="15" id="txtPAmount2" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAllP(3);" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkPVatInclusive2" type="checkbox" name="chkPVatInclusive2" checked="checked" onclick="CalculateAllP(3);" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPSalePrice2" type="text" readonly="readonly" id="txtPSalePrice2" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPVatAmount2" type="text" readonly="readonly" id="txtPVatAmount2" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtPTotalAmount2" type="text" readonly="readonly" id="txtPTotalAmount2" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>3.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <select name="ddlPVAT_Rate3" id="ddlPVAT_Rate3" onchange="CalculateAllP(4);" style="height:20px;width:102px;">
+	<option value="0">1</option>
+
+	<option selected="selected" value="1">2</option>
+	<option value="2">4</option>
+	<option value="3">5</option>
+	<option value="4">10</option>
+	<option value="5">12.5</option>
+	<option value="6">20</option>
+
+</select></td>               
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPAmount3" type="text" maxlength="15" id="txtPAmount3" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAllP(4);" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkPVatInclusive3" type="checkbox" name="chkPVatInclusive3" checked="checked" onclick="CalculateAllP(4);" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPSalePrice3" type="text" readonly="readonly" id="txtPSalePrice3" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPVatAmount3" type="text" readonly="readonly" id="txtPVatAmount3" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtPTotalAmount3" type="text" readonly="readonly" id="txtPTotalAmount3" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>4.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <select name="ddlPVAT_Rate4" id="ddlPVAT_Rate4" onchange="CalculateAllP(5);" style="height:20px;width:102px;">
+	<option value="0">1</option>
+
+	<option value="1">2</option>
+	<option value="2">4</option>
+	<option value="3">5</option>
+	<option value="4">10</option>
+	<option selected="selected" value="5">12.5</option>
+	<option value="6">20</option>
+
+</select></td>                  
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPAmount4" type="text" maxlength="15" id="txtPAmount4" class="inputbox" onchange="CalculateAllP(5);" onkeypress="return DigitOnly(event);" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkPVatInclusive4" type="checkbox" name="chkPVatInclusive4" checked="checked" onclick="CalculateAllP(5);" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPSalePrice4" type="text" readonly="readonly" id="txtPSalePrice4" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPVatAmount4" type="text" readonly="readonly" id="txtPVatAmount4" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtPTotalAmount4" type="text" readonly="readonly" id="txtPTotalAmount4" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>5.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="TextBox3" type="text" id="TextBox3" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAllP(6,'otxt');" style="width:102px;" /></td>               
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPAmount5" type="text" maxlength="15" id="txtPAmount5" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAllP(6,'otxt');" style="width:102px;" /></td>
+
+                <td align="center" >
+                    <input id="chkPVatInclusive5" type="checkbox" name="chkPVatInclusive5" checked="checked" onclick="CalculateAllP(6,'otxt');" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPSalePrice5" type="text" readonly="readonly" id="txtPSalePrice5" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPVatAmount5" type="text" readonly="readonly" id="txtPVatAmount5" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPTotalAmount5" type="text" readonly="readonly" id="txtPTotalAmount5" class="inputbox" style="width:102px;" /></td>
+            </tr>
+
+            <tr >
+                <td align="center" style="width: 40px">
+                    <span class="maincontent1"><strong>6.</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="TextBox4" type="text" id="TextBox4" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAllP(7,'otxt');" style="width:102px;" /></td>               
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPAmount6" type="text" maxlength="15" id="txtPAmount6" class="inputbox" onkeypress="return DigitOnly(event);" onchange="CalculateAllP(7,'otxt');" style="width:102px;" /></td>
+                <td align="center" >
+                    <input id="chkPVatInclusive6" type="checkbox" name="chkPVatInclusive6" checked="checked" onclick="CalculateAllP(7,'otxt');" /></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtPSalePrice6" type="text" readonly="readonly" id="txtPSalePrice6" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPVatAmount6" type="text" readonly="readonly" id="txtPVatAmount6" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPTotalAmount6" type="text" readonly="readonly" id="txtPTotalAmount6" class="inputbox" style="width:102px;" /></td>
+            </tr>
+            <tr >
+                <td></td> 
+                <td align="center" style="width: 40px">
+
+                    <span class="maincontent1"><strong>Total</strong></span></td> 
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPFinalAmount" type="text" id="txtPFinalAmount" class="inputbox" style="width:102px;" /></td>
+                <td></td>                    
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPFinalSalePrice" type="text" readonly="readonly" id="txtPFinalSalePrice" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                    <input name="txtPFinalVatAmount" type="text" readonly="readonly" id="txtPFinalVatAmount" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+
+                    <input name="txtPFinalTotalAmount" type="text" readonly="readonly" id="txtPFinalTotalAmount" class="inputbox" style="width:102px;" /></td>
+            </tr>          
+            <tr>
+                <td>
+                </td>
+                <td align="center" style="width: 40px">
+                </td>
+                <td align="center" class="dollar" style="width: 106px">
+                </td>
+
+                <td align="center" class="dollar" colspan="2">
+                    <strong><span style="color: #4b4949">VAT Payable / (Refundable)(-)</span></strong>
+                    &nbsp; &nbsp;&nbsp;</td>
+                <td align="center" class="dollar" style="width: 106px">
+            <input name="txtVAT_Payable" type="text" readonly="readonly" id="txtVAT_Payable" class="inputbox" style="width:102px;" /></td>
+                <td align="center" class="dollar" style="width: 106px">
+                </td>
+            </tr>
+
+        </table>
+      </td>
+      <td width="15%">
+      </td>
+      
+      </tr>
+      </table>
+      
+     </div>
+     
+      <table width="100%">
+          <tr>
+
+              <td width="15%">
+              </td>
+              <td align="center" width="70%">
+                  <input id="Button1" class="button1" onclick="resetAll('text','checkbox');" type="button" value="Reset" />&nbsp;
+                  <input id="Button2"  class="Printbutton" onclick="Callprint('printArea')" type="button" value="Print"/></td>
+              <td width="15%">
+                  &nbsp;
+              </td>
+          </tr>
+
+      </table>
+       
+    
+<div>
+
+	</div></form>
+</body>
+</html>
+                    </td>
+                    <td valign="top" style="width:3%">
+                    </td>
+                </tr>
+
+            </table>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Footer">
+        <div class="FooterMain">
+            <div class="FooterLinkMain">
+                
+                <div class="Copyright">
+                    <a target="_blank" href="http://www.dcodereapers.com/">Developed By:D code reapers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
