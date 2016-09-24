@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A V Ramgadia &amp; Associates</title>
+    <base href="../">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap, jQuery and other standard library files - online links -->
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+    <!--CAUTION: DO NOT EDIT THESE FILES. Offile Version of the above files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="scripts/jquery.min.1.12.0.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+    <!-- Common Files-->
+    <link rel="stylesheet" type="text/css" href="css/main.css"><link type="text/css" rel="stylesheet" href="css/textbox.css" />
+<link type="text/css" rel="stylesheet" href="css/body.css" />
+<link type="text/css" rel="stylesheet" href="css/dropkick.css" />
+<title>
+	Income Tax Calculator
+</title>
+    <script language="javascript" type="text/javascript" src="js/taxcalc.js">        
+    </script>
+    <script language="javascript" type="text/javascript" src="js/gui.js">        
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"
+        charset="utf-8"></script>
+    <script src="js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+</head>
+<body onload='displaydiv()'>
+	<div class="container">
+    <!-- header -->
+    <div class="include-header"></div>
+
+		<div class="row padding20">
+		
+
+			<!-- Your Code Goes Here -->
+			<form name="form1" method="post"  onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div>
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+
+</div>
+    <div id="ModalPopupDiv" class="ModalPopup send-mail">
+        <div class="header">
+            <h1>
+                Send Mail</h1>
+            <h2>
+                <a href="javascript:void(0);" style="color: #FFF !important; text-decoration: none !important"
+                    onclick="javascript:CloseModelPopup();">X</a></h2>
+        </div>
+        <!-- contant -->
+        <div class="container">
+            <p>
+                Enter your email address</p>
+            <div class="inpu">
+                <input name="txtemailaddress" type="text" id="txtemailaddress" style="text-align: left; width: 100%;" />
+                <span id="RegularExpressionValidator1" style="color:Red;text-align:left;width:100%;visibility:hidden;">Invalid Email</span></div>
+            <div class="go">
+                <input type="image" name="imgsendmail" id="imgsendmail" src="incometax/send-mail/go.png" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;imgsendmail&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:28px;width:32px;border-width:0px;" />
+            </div>
+        </div>
+        <div class="mail-foot">        </div>
+    </div>
+    <div id="helppopupdiv" class="ModalPopup send-mail" style="display: none;">
+        <div class="header">
+            <h1>
+                Help</h1>
+            <h2>
+                <a href="javascript:void(0);" style="color: #FFF !important; text-decoration: none !important"
+                    onclick="javascript:CloseHelplPopup();">X</a></h2>
+        </div>
+        <div id="helpdata" style="padding: 2px;" class="container">        </div>
+        <div class="mail-foot">        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h1 style="background:url(incometax/advance-calculator/calculator-header.png) repeat-x; height:14px; width:707px; border-radius:12px 12px 0 0;">
+          </h1>
+            <div class="tc-lin">
+                <ul>
+                    <li class="tcw2" style="border-right: 1px solid #fff;"> <img src="incometax/advance-calculator/name-income-taxcalculator.png" /></li>
+                    <li>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="calculator">
+            <!-- first box -->
+            <div class="row">
+                <div class="arrow left-white ">
+                    <div class="arr">
+                        &nbsp;</div>
+                </div>
+                <!-- contain -->
+                <div class="cont center-white">
+                    Assessment Year
+                </div>
+                <!-- field input -->
+                <div class="inputf center-white">
+                    <p>
+                        
+                        <select name="cbassyear" id="cbassyear" class="existing_event" onkeydown="return(moveNextcontrol())" onchange="fillcategorycombo();displaydiv();calcdeduction();calculateData()" style="width: 140px">
+	<option value="2014-15">2014-15</option>
+	<option value="2013-14">2013-14</option>
+	<option value="2012-13">2012-13</option>
+	<option value="2011-12">2011-12</option>
+	<option value="2010-11">2010-11</option>
+
+</select>
+                    </p>
+                </div>
+                <!-- blank right space -->
+                <div class="rightsp right-white">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="arrow left-white2 ">
+                    <div class="arr">
+                        &nbsp;</div>
+                </div>
+                <!-- contain -->
+                <div class="cont center-white">
+                    Tax Payer
+                </div>
+                <!-- field input -->
+                <div class="inputf center-white">
+                    <p>
+                        
+                        <select name="cbasstype" id="cbasstype" class="existing_event" onkeydown="return(moveNextcontrol())" onchange="displaydiv();calculateData()" style="width: 140px">
+	<option value="Individual">Individual</option>
+	<option value="HUF">HUF</option>
+	<option value="AOPs/BOI">AOPs/BOI</option>
+	<option value="Domestic Company">Domestic Company</option>
+	<option value="Foreign Company">Foreign Company</option>
+	<option value="Firms">Firms</option>
+	<option value="LLP">LLP</option>
+	<option value="Co-operative Society">Co-operative Society</option>
+
+</select>
+                    </p>
+                </div>
+                <!-- blank right space -->
+                <div class="rightsp right-whiten2">
+                    &nbsp;
+                </div>
+            </div>
+            <div id="tblind1">
+                <div id="catenew" class="row">
+                    <div class="arrow left-white2 ">
+                        <div class="arr">
+                            &nbsp;</div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont center-white">
+                        Male / Female / Senior Citizen
+                    </div>
+                    <!-- field input -->
+                    <div class="inputf center-white">
+                        <p>
+                            <select name="cmbasscategory" id="cmbasscategory" class="existing_event" onkeydown="return(moveNextcontrol())" onchange="calculateData()" style="width: 140px">
+	<option value="Male">Male</option>
+	<option value="Female">Female</option>
+	<option value="Senior Citizen">Senior Citizen</option>
+	<option value="Super Senior Citizen">Super Senior Citizen</option>
+
+</select>
+                        </p>
+                    </div>
+                    <!-- blank right space -->
+                    <div class="rightsp right-whiten2">
+                        &nbsp;
+                    </div>
+                </div>
+                <div id="cateold" class="row">
+                    <div class="arrow left-white2 ">
+                        <div class="arr">
+                            &nbsp;</div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont center-white">
+                        Male / Female / Senior Citizen</div>
+                    <!-- field input -->
+                    <div class="inputf center-white">
+                        <p>
+                            <select name="cmbasscategoryold" id="cmbasscategoryold" class="existing_event" onkeydown="return(moveNextcontrol())" onchange="calculateData()" style="width: 140px">
+	<option value="Male">Male</option>
+	<option value="Female">Female</option>
+	<option value="Senior Citizen">Senior Citizen</option>
+
+</select>
+                        </p>
+                    </div>
+                    <!-- blank right space -->
+                    <div class="rightsp right-whiten2">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="arrow left-whitent">
+                        <div class="arr">
+                            &nbsp;</div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont center-white">
+                        Residential Status</div>
+                    <!-- field input -->
+                    <div class="inputf center-white">
+                        <p>
+                            
+                            <select name="cmbresistatus" id="cmbresistatus" class="existing_event" onkeydown="return(moveNextcontrol())" onchange="displaydiv();calcdeduction();calculateData()" style="width: 140px">
+	<option value="Resident">Resident</option>
+	<option value="Non-Resident">Non-Resident</option>
+	<option value="Not Ordinary Resident">Not Ordinary Resident</option>
+
+</select>
+                        </p>
+                    </div>
+                    <!-- blank right space -->
+                    <div class="rightsp right-whitent">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <!-- first box end -->
+            <div class="clear">
+            </div>
+            <div id="tblind">
+                <div class="row-black">
+                    <!-- second box black item -->
+                    <div class="arrow2 left-black">
+                        &nbsp; I
+                    </div>
+                    <!--second contain -->
+                    <div class="cont2 center-black">
+                        <span>Income from Salary </span>
+                    </div>
+                    <!--second field input -->
+                    <div class="inputf2 center-black">
+                        <p class="bg-input">
+                            <input name="txtsalary" type="text" id="txtsalary" title="Income from Salary" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtsalary')" onchange="calculateNetTaxableIncome();" />
+                        </p>
+                    </div>
+                    <!-- second blank right space -->
+                    <div class="rightsp2 right-blackss-l">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row-black">
+                    <!-- second box black item -->
+                    <div class="arrow2 left-blackSD">
+                        &nbsp;II
+                    </div>
+                    <!--second contain -->
+                    <div class="cont2 center-black">
+                        <span>Income from House Property </span>
+                        <p>
+                            <a href="#">
+                                <img id='hidehp' src="incometax/hide-detail.png" width="70" height="20" onclick="hidedetailhp();" /></a>
+                            <a href="#">
+                                <img id='seehp' src="incometax/see-details.png" width="70" height="20" onclick="seedetailhp();" /></a></p>
+                        
+                    </div>
+                    <!--second field input -->
+                    <div class="inputf2 center-black">
+                        <p class="bg-input">
+                            <input name="txthp" type="text" id="txthp" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></p>
+                    </div>
+                    <!-- second blank right space -->
+                    <div class="rightsp2 right-blackss">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <!-- display box -->
+            <div id="dvhouseproperty" style="overflow: hidden; display: block;">
+                <div class="popup">
+                    <!-- popup box -->
+                    <!-- text -->
+                    <div class="bgtextde">
+                        <div class="fl-text">
+                            <div class="row2">
+                                <div class="arrowp">
+                                    a</div>
+                                <div class="text-linep">
+                                    Income from Self-occupied Property
+                                </div>
+                                <div class="fieldp">
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep txt-header">
+                                    Interest Paid/Payable on Housing Loan</div>
+                                <div class="fieldp">
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    <a class="tooltip" href="#">1. &nbsp;Interest on Housing Loan<span class="custom help"><img
+                                        src="incometax/Help.png" height="48" width="48" alt="Help">Current year’s interest
+                                        plus 1/5th of interest pertaining to pre-construction period</span></a>                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtsointerest" type="text" id="txtsointerest" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtsointerest')" onchange="calcHP();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                           
+                            <div id="currentyearinterestdiv" class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    2. &nbsp;Current year interest
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtsocyinterest" type="text" id="txtsocyinterest" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtsocyinterest')" onchange="calcHP();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    2.&nbsp; Income from Self-occupied House Property
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtso" type="text" id="txtso" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    b</div>
+                                <div class="text-linep">
+                                    Income from Let-out Property
+                                </div>
+                                <div class="fieldp">
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    <a class="tooltip" href="#">1. &nbsp;Annual Letable Value/Rent Received or Receivable
+                                        <span class="custom help">
+                                            <img src="incometax/Help.png" height="48" width="48" alt="Help">Higher if let out for
+                                            whole of the year, lower if let out for part of the year</span></a>                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtlogrossannualvalue" type="text" id="txtlogrossannualvalue" title="Higher if let out for whole of the year, lower if let out for part of the year" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtlogrossannualvalue')" onchange="calcHP();" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    2.&nbsp; Less: Municipal Taxes Paid During the Year
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtlomunicpaltax" type="text" id="txtlomunicpaltax" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtlomunicpaltax')" onchange="calcHP();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    3. &nbsp;Less:Unrealized Rent
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtunrealizedrent" type="text" id="txtunrealizedrent" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtunrealizedrent')" onchange="calcHP();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    4. &nbsp;Net Annual Value (1-(2+3))
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtlonetannualvalue" type="text" id="txtlonetannualvalue" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    5. &nbsp;Less: Deductions from Net Annual Value
+                                </div>
+                                <div class="fieldp">
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep ">
+                                    <p class="pad-txt">
+                                        i.&nbsp; Standard Deduction @ 30% of Net Annual Value
+                                    </p>
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtstabdarddeduction" type="text" id="txtstabdarddeduction" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></div>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    <p class="pad-txt">
+                                        <a class="tooltip" href="#">ii. &nbsp;Interest on Housing Loan<span class="custom help"><img
+                                            src="incometax/Help.png" height="48" width="48" alt="Help">Current year’s interest
+                                            plus 1/5th of interest pertaining to pre-construction period</span></a>                                    </p>
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtlointerest" type="text" id="txtlointerest" class="in135" onblur="chkNegativeAmt('txtlointerest')" onchange="calcHP();" onkeydown="return(moveNextcontrol())" onkeypress="return chkNumericInput(this,event)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div id="intdiv">
+                                <div class="row2">
+                                    <div class="arrowp">
+                                        &nbsp;</div>
+                                    <div class="text-linep">
+                                        <p class="pad-txt">
+                                            ii.&nbsp; Interest Paid/Payable on Loan
+                                        </p>
+                                    </div>
+                                    <div class="fieldp">
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <div class="row2">
+                                    <div class="arrowp">
+                                        &nbsp;</div>
+                                    <div class="text-linep">
+                                        <p class="pad-txt2">
+                                            during Pre-construction period (1/5)</p>
+                                    </div>
+                                    <div class="fieldp">
+                                        <div class="bgfield">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <div class="row2">
+                                    <div class="arrowp">
+                                        &nbsp;</div>
+                                    <div class="text-linep">
+                                        <p class="pad-txt2">
+                                            b.&nbsp; Current year interest
+                                        </p>
+                                    </div>
+                                    <div class="fieldp">
+                                        <div class="bgfield">
+                                            <input name="txtlocyinterest" type="text" id="txtlocyinterest" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtlocyinterest')" onchange="calcHP();" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    6 &nbsp;Income from Let-out House Property
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtincomefromlo" type="text" id="txtincomefromlo" class="in135" onkeydown="return(moveNextcontrol())" onchange="calculateData();" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></div>
+                                </div>
+                            </div>
+                            <!--  red color -->
+                            <!--  gray color -->
+                            <!-- end -->
+                        </div>
+                    </div>
+                    <!-- field input -->
+                    <!-- blank right space -->
+                    <!-- first box end -->
+                    <!-- second box black item -->
+                    <!--second contain -->
+                    <!--second field input -->
+                    <!-- second blank right space -->
+                    <!-- third box -->
+                    <!-- contain -->
+                    <!-- field input -->
+                    <!-- first box end -->
+                    <!--  box end -->
+                </div>
+            </div>
+            <!-- end display box -->
+            <div id="tblind2">
+                <div class="row-black">
+                    <!-- second box black item -->
+                    <div class="arrow2 left-blackSD">
+                        &nbsp;III
+                    </div>
+                    <!--second contain -->
+                    <div class="cont2 center-black">
+                        <span>Capital Gains</span>
+                        <p>
+                            <a href="#">
+                                <img id='hidecg' src="incometax/hide-detail.png" width="70" height="20" onclick="hidedetailcg();" /></a>
+                            <a href="#">
+                                <img id='seecg' src="incometax/see-details.png" width="70" height="20" onclick="seedetailcg();" /></a></p>
+                        
+                    </div>
+                    <!--second field input -->
+                    <div class="inputf2 center-black">
+                        <p class="bg-input">
+                            <input name="txtcgtotal" type="text" id="txtcgtotal" class="in135" onkeydown="return(moveNextcontrol())" style="background-color:Silver;" /></p>
+                    </div>
+                    <!-- second blank right space -->
+                    <div class="rightsp2 right-blackss">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <!-- display box -->
+            <div id="dvcapitalgain" style="overflow: hidden; display: block;">
+                <div class="popup">
+                    <!-- popup box -->
+                    <!-- text -->
+                    <div class="bgtextde">
+                        <div class="fl-text">
+                            <div class="row2">
+                                <div class="arrowp">
+                                    I</div>
+                                <div class="text-linep">
+                                    Short Term Capital GainS (Other than covered under section 111A)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtstcgnormal" type="text" id="txtstcgnormal" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtstcgnormal')" onchange="calcCG();" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;II</div>
+                                <div class="text-linep">
+                                    Short Term Capital GainS (Covered under section 111A)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtstcg111a" type="text" id="txtstcg111a" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtstcg111a')" onchange="calcCG();" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;III</div>
+                                <div class="text-linep">
+                                    Long Term Capital Gains (Charged to tax @ 20%)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="ltcgwithindexation" type="text" id="ltcgwithindexation" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('ltcgwithindexation')" onchange="calcCG();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;IV</div>
+                                <div class="text-linep">
+                                    Long Term Capital Gains (Charged to tax @ 10%)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="ltcgwithoutindexation" type="text" id="ltcgwithoutindexation" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('ltcgwithoutindexation')" onchange="calcCG();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                        </div>
+                    </div>
+                    <!--  box end -->
+                </div>
+            </div>
+            <!-- end display box -->
+            <div id="tblind3">
+                <div class="row-black">
+                    <!-- second box black item -->
+                    <div class="arrow2 left-blackSD">
+                        &nbsp;IV
+                    </div>
+                    <!--second contain -->
+                    <div class="cont2 center-black">
+                        <span>Income from Other Sources</span>
+                        <p>
+                            <a href="#">
+                                <img id='hideos' src="incometax/hide-detail.png" width="70" height="20" onclick="hidedetailos();" /></a>
+                            <a href="#">
+                                <img id='seeos' src="incometax/see-details.png" width="70" height="20" onclick="seedetailos();" /></a></p>
+                        
+                    </div>
+                    <!--second field input -->
+                    <div class="inputf2 center-black">
+                        <p class="bg-input">
+                            <input name="txtostotal" type="text" id="txtostotal" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></p>
+                    </div>
+                    <!-- second blank right space -->
+                    <div class="rightsp2 right-blackss">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <!-- display box -->
+            <div id="dvothersource" style="overflow: hidden; display: block;">
+                <div class="popup">
+                    <!-- popup box -->
+                    <!-- text -->
+                    <div class="bgtextde">
+                        <div class="fl-text">
+                            <div class="row2">
+                                <div class="arrowp">
+                                    I</div>
+                                <div class="text-linep">
+                                    Interest
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtinterest" type="text" id="txtinterest" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtinterest')" onchange="calcOS();" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div id="dividentdiv" class="row2">
+                                <div class="arrowp">
+                                    &nbsp;II</div>
+                                <div class="text-linep">
+                                    Dividend
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtdividend" type="text" id="txtdividend" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtdividend')" onchange="calcOS();" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;II</div>
+                                <div class="text-linep">
+                                    Commission/Other Income
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtothers" type="text" id="txtothers" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtothers')" onchange="calcOS();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    &nbsp;III</div>
+                                <div class="text-linep">
+                                    Winnings from Lottery, Crossword Puzzles, etc.
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtlottery" type="text" id="txtlottery" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtlottery')" onchange="calcOS();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                        </div>
+                    </div>
+                    <!--  box end -->
+                </div>
+            </div>
+            <!-- end display box -->
+            <div id="tblind4">
+                <div class="row-black">
+                    <!-- second box black item -->
+                    <div class="arrow2 left-blackSD">
+                        &nbsp; V
+                    </div>
+                    <!--second contain -->
+                    <div class="cont2 center-black">
+                        <span>Profits and Gains of Business or Profession (enter profit only)</span>
+                    </div>
+                    <!--second field input -->
+                    <div class="inputf2 center-black">
+                        <p class="bg-input">
+                            <input name="txtPGBP" type="text" id="txtPGBP" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtPGBP')" onchange="calculateNetTaxableIncome();" /></p>
+                    </div>
+                    <!-- second blank right space -->
+                    <div class="rightsp2 right-blackss">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row-black">
+                    <!-- second box black item -->
+                    <div class="arrow2 left-blackSD">
+                        VI&nbsp;
+                    </div>
+                    <!--second contain -->
+                    <div class="cont2 center-black">
+                        <span>Agricultural Income</span>
+                    </div>
+                    <!--second field input -->
+                    <div class="inputf2 center-black">
+                        <p class="bg-input">
+                            <input name="txtai" type="text" id="txtai" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtai')" onchange="calculateNetTaxableIncome();" /></p>
+                    </div>
+                    <!-- second blank right space -->
+                    <div class="rightsp2 right-blackss">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- second box black item -->
+                    <div class="arrow2 left-blackSD-L">
+                        &nbsp;VII
+                    </div>
+                    <!--second contain -->
+                    <div class="cont2 center-black">
+                        <span>Deductions from Gross Total Income</span>
+                        <p>
+                            <a href="#">
+                                <img id='hidededuction' src="incometax/hide-detail.png" width="70" height="20" onclick="hidedetaildeduction();" /></a>
+                            <a href="#">
+                                <img id='seededuction' src="incometax/see-details.png" width="70" height="20" onclick="seedetaildeduction();" /></a></p>
+                        
+                    </div>
+                    <!--second field input -->
+                    <div class="inputf2 center-black">
+                        <p class="bg-input">
+                            <input name="txtdeduction" type="text" id="txtdeduction" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></p>
+                    </div>
+                    <!-- second blank right space -->
+                    <div class="rightsp2 right-blackss-ll">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <!-- display box -->
+            <div id="dvdeduction" style="overflow: hidden; display: block;">
+                <div class="popup">
+                    <!-- popup box -->
+                    <!-- text -->
+                    <div class="bgtextde">
+                        <div class="fl-text">
+                            <div class="row2">
+                                <div class="arrowp">
+                                    I</div>
+                                <div class="text-linep">
+                                    Life Insurance premium paid
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtlic" type="text" id="txtlic" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtlic')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    II</div>
+                                <div class="text-linep">
+                                    Payment for annuity plan
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtannuity" type="text" id="txtannuity" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtannuity')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    III</div>
+                                <div class="text-linep">
+                                    Contribution toward provident fund / PPF
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtpf" type="text" id="txtpf" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtpf')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    IV</div>
+                                <div class="text-linep">
+                                    Investment in NSC (VIII issue) + Interest
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtnsc" type="text" id="txtnsc" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtnsc')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    V</div>
+                                <div class="text-linep">
+                                    Contribution toward ULIP
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtulip" type="text" id="txtulip" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtulip')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    VI</div>
+                                <div class="text-linep">
+                                    Contribution toward notified pension fund by MF/UTI
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtpension" type="text" id="txtpension" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtpension')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    VII</div>
+                                <div class="text-linep">
+                                    Re-payment of housing loan etc.</div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtrepayment" type="text" id="txtrepayment" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtrepayment')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    VIII</div>
+                                <div class="text-linep">
+                                    Tuition fees paid for children
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txttuition" type="text" id="txttuition" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txttuition')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    IX</div>
+                                <div class="text-linep">
+                                    5 Years fixed deposit with PO or Schedule Bank
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtfd" type="text" id="txtfd" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtfd')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    X</div>
+                                <div class="text-linep">
+                                    Contribution toward NPF
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txt80ccc" type="text" id="txt80ccc" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80ccc')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    XI</div>
+                                <div class="text-linep">
+                                    Employee&#39;s contribution toward NPS (up to 10%) (u/s 80CCD)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txt80ccd1" type="text" id="txt80ccd1" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80ccd1')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="row2">
+                                <div class="arrowp">
+                                    XII</div>
+                                <div class="text-linep">
+                                    Employer's contribution toward NPS (up to 10%) (u/s 80CCD)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txt80ccd2" type="text" id="txt80ccd2" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80ccd2')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div id="tr8ccf" class="row2">
+                                <div class="arrowp">
+                                    XIII</div>
+                                <div class="text-linep">
+                                    Long-term infrastructure bonds (u/s 80CCF)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txt80cccf" type="text" id="txt80cccf" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80cccf')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div id="tr80ccg" class="row2">
+                                <div id="span80ccg" class="arrowp">
+                                    XIV</div>
+                                <div class="text-linep">
+                                    Investment under equity saving scheme (u/s 80CCG)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txt80ccg" type="text" id="txt80ccg" title="Deduction u/s 80CCG is not allowed if GTI exceed 10 lacs" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80ccg')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div id="Div1" class="row2">
+                                <div id="Div2" class="arrowp">
+                                    <span id="spanotherdeduction80cid">XIV</span></div>
+                                <div class="text-linep">
+                                    Any other deductable (u/s 80C)
+                                </div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txtother80c" type="text" id="txtother80c" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80ccg')" onchange="calcdeduction();" /></div>
+                                </div>
+                            </div>
+                            <!--  red color -->
+                            <div class="row-red">
+                                <div class="arrowp">
+                                    &nbsp;</div>
+                                <div class="text-linep">
+                                    TOTAL</div>
+                                <div class="fieldp">
+                                    <div class="bgfield">
+                                        <input name="txttotalofdeda" type="text" id="txttotalofdeda" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></div>
+                                </div>
+                            </div>
+                            <!--  gray color -->
+                            <div class="gray-bg">
+                                <div id="80ddiv" class="rownew2">
+                                    <div class="arrowp">
+                                        <span id="span80dindex">b </span>
+                                    </div>
+                                    <div class="text-linep">
+                                        Medi-claim premium (u/s 80D)
+                                    </div>
+                                    <div class="fieldp">
+                                        <div class="bgfield">
+                                            <input name="txt80d" type="text" id="txt80d" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80d')" onchange="calcdeduction();" /></div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <div class="rownew2">
+                                    <div class="arrowp">
+                                        <span id="span80gindex">c </span>
+                                    </div>
+                                    <div class="text-linep">
+                                        Donations (u/s 80G)
+                                    </div>
+                                    <div class="fieldp">
+                                        <div class="bgfield">
+                                            <input name="txt80g" type="text" id="txt80g" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80g')" onchange="calcdeduction();" /></div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <div id="80dddiv">
+                                    <div class="rownew2">
+                                        <div class="arrowp">
+                                            <span id="span80ddindex">d </span>
+                                        </div>
+                                        <div class="text-linep">
+                                            Deduction for maintenance / medical treatment of dependent (u/s 80DD)
+                                        </div>
+                                        <div class="fieldp">
+                                            <div class="bgfield">
+                                                <input name="txt80dd" type="text" id="txt80dd" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></div>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                    <div class="rownew2">
+                                        <div class="arrowp">
+                                            &nbsp;</div>
+                                        <div class="text-linep">
+                                            <span style="color:#004000;"><input id="chk80ddapp" type="checkbox" name="chk80ddapp" onclick="calc80dd();" /><label for="chk80ddapp">Tick if 80DD is claimed</label></span>
+                                        </div>
+                                        <div class="fieldp">
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                    <div class="rownew2">
+                                        <div class="arrowp">
+                                            &nbsp;</div>
+                                        <div class="text-linep">
+                                            <span style="color:#004000;"><input id="chk80dddisablity" type="checkbox" name="chk80dddisablity" onclick="calc80dd();" /><label for="chk80dddisablity">Tick if severe disability</label></span>
+                                        </div>
+                                        <div class="fieldp">
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                </div>
+                                <div class="rownew2">
+                                    <div class="arrowp">
+                                        <span id="span80eindex">e </span>
+                                    </div>
+                                    <div class="text-linep">
+                                        Interest on loan for higher education (u/s 80E)
+                                    </div>
+                                    <div class="fieldp">
+                                        <div class="bgfield">
+                                            <input name="txt80e" type="text" id="txt80e" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80e')" onchange="calcdeduction();" /></div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <div id="80ee">
+                                    <div class="rownew2">
+                                        <div class="arrowp">
+                                            <span id="span80ee">f </span>
+                                        </div>
+                                        <div class="text-linep">
+                                            Interest on loan taken for Residential House (u/s 80EE)
+                                        </div>
+                                        <div class="fieldp">
+                                            <div class="bgfield">
+                                                <input name="txt80ee" type="text" id="txt80ee" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80e')" onchange="calcdeduction();" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="80udiv">
+                                    <div class="rownew2">
+                                        <div class="arrowp">
+                                            <span id="span80uindex">g </span>
+                                        </div>
+                                        <div class="text-linep">
+                                            Deduction in case of a person with disability (u/s 80U)
+                                        </div>
+                                        <div class="fieldp">
+                                            <div class="bgfield">
+                                                <input name="txt80u" type="text" id="txt80u" class="in135" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" style="background-color:Silver;" /></div>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                    <div class="rownew2">
+                                        <div class="arrowp">
+                                            &nbsp;</div>
+                                        <div class="text-linep">
+                                            <span style="color:#004000;"><input id="chk80uapp" type="checkbox" name="chk80uapp" onclick="calc80u();" /><label for="chk80uapp">Tick if 80U is claimed</label></span>
+                                        </div>
+                                        <div class="fieldp">
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                    <div class="rownew2">
+                                        <div class="arrowp">
+                                            &nbsp;</div>
+                                        <div class="text-linep">
+                                            <span style="color:#004000;"><input id="chk80udisability" type="checkbox" name="chk80udisability" onclick="calc80u();" /><label for="chk80udisability">Tick if severe disability</label></span></div>
+                                        <div class="fieldp">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <div id="tr80tta" class="rownew2">
+                                    <div class="arrowp">
+                                        <span id="span80tta">h</span>
+                                    </div>
+                                    <div class="text-linep">
+                                        Interest on deposits in saving account (u/s 80TTA)
+                                    </div>
+                                    <div class="fieldp">
+                                        <div class="bgfield">
+                                            <input name="txt80tta" type="text" id="txt80tta" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txt80tta')" onchange="calcdeduction();" /></div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <div class="rownew2">
+                                    <div id="spananyotherdeduction" class="arrowp">
+                                        i</div>
+                                    <div class="text-linep">
+                                        Any other deductions
+                                    </div>
+                                    <div class="fieldp">
+                                        <div class="bgfield">
+                                            <input name="txtotherdeduction" type="text" id="txtotherdeduction" class="in135" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onblur="chkNegativeAmt('txtotherdeduction')" onchange="calcdeduction();" /></div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                            </div>
+                            <!-- end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end display box -->
+            <div class="clear">
+            </div>
+            <div id="tblnettaxable">
+                <div class="row">
+                    <!-- third box -->
+                    <div class="arrow3 left-white3">
+                        <div class="arrn3">
+                        </div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont3 center-white3">
+                        <span>Taxable Income</span>
+                    </div>
+                    <!-- field input -->
+                    <div class="inputf3 center-white3">
+                        <div class="secondin bg-input">
+                            <input name="txtNetIncome" type="text" id="txtNetIncome" class="in135 nbinput" onkeypress="return chkNumericInput(this,event)" onkeydown="return(moveNextcontrol())" onchange="calculateData();" />
+                        </div>
+                    </div>
+                    <div class="rightsp3 right-white3">
+                    </div>
+                    <!-- first box end -->
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div id="tbloutputind">
+                <div class="row">
+                    <!-- third box -->
+                    <div class="arrow3 left-whitefgh">
+                        <div class="arrn3">
+                        </div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont3 center-white3">
+                        <span>Income Liable to Tax at Normal Rate</span>
+                        <div class="bbl">
+                            ---</div>
+                    </div>
+                    <!-- field input -->
+                    <div class="inputf3 center-white3">
+                        <div class="in">
+                            <input name="txtnormalslabincome" type="text" id="txtnormalslabincome" class="in98" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" /></div>
+                        <div class="secondin bg-input">
+                            <input name="txtnormalslabtax" type="text" id="txtnormalslabtax" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" /></div>
+                    </div>
+                    <div class="rightsp3 right-white3-l">
+                    </div>
+                    <!-- first box end -->
+                </div>
+                <div class="clear">
+                </div>
+                <div class="row">
+                    <!-- third box -->
+                    <div class="arrow3 left-whitefgh">
+                        <div class="arrn3">
+                        </div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont3 center-white3">
+                        <span>Short Term Capital Gains (Covered u/s 111A)</span>
+                        <div class="bbl">
+                            15%</div>
+                    </div>
+                    <!-- field input -->
+                    <div class="inputf3 center-white3">
+                        <div class="in">
+                            <input name="txtsi15" type="text" id="txtsi15" class="in98" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" /></div>
+                        <div class="secondin bg-input">
+                            <input name="txttax15" type="text" id="txttax15" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" /></div>
+                    </div>
+                    <div class="rightsp3 right-white3-l">
+                    </div>
+                    <!-- first box end -->
+                </div>
+                <div class="clear">
+                </div>
+                <div class="row">
+                    <!-- third box -->
+                    <div class="arrow3 left-whitefgh">
+                        <div class="arrn3">
+                        </div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont3 center-white3">
+                        <span>Long Term Capital Gains (Charged to tax @ 20%)</span>
+                        <div class="bbl">
+                            20%</div>
+                    </div>
+                    <!-- field input -->
+                    <div class="inputf3 center-white3">
+                        <div class="in">
+                            <input name="txtsi20" type="text" id="txtsi20" class="in98" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" /></div>
+                        <div class="secondin bg-input">
+                            <input name="txttax20" type="text" id="txttax20" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" />
+                        </div>
+                    </div>
+                    <div class="rightsp3 right-white3-l">
+                    </div>
+                    <!-- first box end -->
+                </div>
+                <!--  start -->
+                <div class="row">
+                    <!-- third box -->
+                    <div class="arrow3 left-whitefgh">
+                        <div class="arrn3">
+                        </div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont3 center-white3">
+                        <span>Long Term Capital Gains (Charged to tax @ 10%)</span>
+                        <div class="bbl">
+                            10%</div>
+                    </div>
+                    <!-- field input -->
+                    <div class="inputf3 center-white3">
+                        <div class="in">
+                            <input name="txtsi10" type="text" id="txtsi10" class="in98" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" /></div>
+                        <div class="secondin bg-input">
+                            <input name="txttax10" type="text" id="txttax10" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" />
+                        </div>
+                    </div>
+                    <div class="rightsp3 right-white3-l">
+                    </div>
+                    <!-- first box end -->
+                </div>
+                <!--  start -->
+                <div class="row">
+                    <!-- third box -->
+                    <div class="arrow3 left-whitefgh">
+                        <div class="arrn3">
+                        </div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont3 center-white3">
+                        <span>Winnings from Lottery, Crossword Puzzles, etc.</span>
+                        <div class="bbl">
+                            30%</div>
+                    </div>
+                    <!-- field input -->
+                    <div class="inputf3 center-white3">
+                        <div class="in">
+                            <input name="txtsi30" type="text" id="txtsi30" class="in98" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" /></div>
+                        <div class="secondin bg-input">
+                            <input name="txttax30" type="text" id="txttax30" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" />
+                        </div>
+                    </div>
+                    <div class="rightsp3 right-white3-l">
+                    </div>
+                    <!-- first box end -->
+                </div>
+                <!--  start -->
+            </div>
+            <div class="row">
+                <!-- third box -->
+                <div class="arrow3 left-whitefgh">
+                    <div class="arrn3">
+                    </div>
+                </div>
+                <!-- contain -->
+                <div class="cont3 center-white3">
+                    <span id="taxpayblecaption">Income Tax Payable </span>
+                </div>
+                <!-- field input -->
+                <div class="inputf3 center-white3">
+                    <div class="secondin bg-input">
+                        <input name="txtTax" type="text" id="txtTax" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" />
+                    </div>
+                    <!-- first box end -->
+                </div>
+                <div class="rightsp3 right-white3-l">
+                </div>
+                <!--  start -->
+                <div class="row">
+                    <!-- third box -->
+                    <div class="arrow3 left-whitefgh">
+                        <div class="arrn3">
+                        </div>
+                    </div>
+                    <!-- contain -->
+                    <div class="cont3 center-white3">
+                        <span>Surcharge </span>
+                    </div>
+                    <!-- field input -->
+                    <div class="inputf3 center-white3">
+                        <div class="secondin bg-input">
+                            <input name="txtsurcharge" type="text" id="txtsurcharge" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" /></div>
+                    </div>
+                </div>
+                <div class="rightsp3 right-white3-l">
+                </div>
+                <!-- first box end -->
+            </div>
+            <!--  start -->
+            <div class="row">
+                <!-- third box -->
+                <div class="arrow3 left-whitefgh">
+                    <div class="arrn3">
+                    </div>
+                </div>
+                <!-- contain -->
+                <div class="cont3 center-white3">
+                    <span>Education Cess @ 2% </span>
+                </div>
+                <!-- field input -->
+                <div class="inputf3 center-white3">
+                    <div class="secondin bg-input">
+                        <input name="txtEduCess" type="text" id="txtEduCess" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" />
+                    </div>
+                </div>
+                <div class="rightsp3 right-white3-l">
+                </div>
+                <!-- first box end -->
+            </div>
+            <div class="clear">
+            </div>
+            <!--  start -->
+            <div class="row">
+                <!-- third box -->
+                <div class="arrow3 left-whitefgh">
+                    <div class="arrn3">
+                    </div>
+                </div>
+                <!-- contain -->
+                <div class="cont3 center-white3">
+                    <span>Secondary and Higher Education Cess @ 1% </span>
+                </div>
+                <!-- field input -->
+                <div class="inputf3 center-white3">
+                    <div class="secondin bg-input">
+                        <input name="txtHEduCess" type="text" id="txtHEduCess" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" />
+                    </div>
+                </div>
+                <div class="rightsp3 right-white3-l">
+                </div>
+                <!-- first box end -->
+            </div>
+            <!--  start -->
+            <div class="row">
+                <!-- third box -->
+                <div class="arrow3 left-white-l">
+                    <div class="arrn3" style="padding: 0 0 2px 0;">
+                    </div>
+                </div>
+                <!-- contain -->
+                <div class="cont3 center-white3">
+                    <span>Total Tax Liability </span>
+                </div>
+                <!-- field input -->
+                <div class="inputf3 center-white3">
+                    <div class="secondin bg-input">
+                        <input name="txttotaltax" type="text" id="txttotaltax" class="in135 nbinput" onkeydown="return(moveNextcontrol())" onkeypress="return chkReadonly(this,event)" />
+                    </div>
+                </div>
+                <div class="rightsp3 right-whitemm-ll">
+                </div>
+                <!-- first box end -->
+            </div>
+            <!--  box end -->
+        </div>
+        <!-- send mail -->
+        <div class="footer">
+            <h1>
+             
+                <a href="javascript:void(0);">
+                    <img src="incometax/reset.png" onclick="javascript:clearAll();" /></a></h1>
+        </div>
+        
+
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("RegularExpressionValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var RegularExpressionValidator1 = document.all ? document.all["RegularExpressionValidator1"] : document.getElementById("RegularExpressionValidator1");
+RegularExpressionValidator1.controltovalidate = "txtemailaddress";
+RegularExpressionValidator1.errormessage = "Invalid Email";
+RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator1.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+
+
+		</div>
+
+    <!-- footer -->
+		<div class="include-footer"></div>
+	</div>
+</body>
+</html>
