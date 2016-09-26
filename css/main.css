@@ -67,6 +67,6 @@ marquee{
 	height: 130px;
 	scrollamount: 1;
 }
-.link a:link, .link a:hover, .link a:visited{
+.link a:active, .link a:hover, .link a:visited{
 	color: black;
 }
