@@ -77,7 +77,7 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
 </script>   
 
    
-        <h1>Auto Loan EMI</h1>
+        <h1 style="text-align: center;">Auto Loan EMI</h1>
    
     <div class="find_middle1">
         <div style="margin-left: 1px; margin-right: 1px;">
@@ -94,14 +94,14 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
                                                  
                                          <tr>
                                             <td colspan="3" class="disname">
-                                                <b><i>Taking an Auto Loan? Check how much will be your EMI</i></b>
+                                                <b><i style="font-size: 20px;">Taking an Auto Loan? Check how much will be your EMI</i></b>
                                             </td>
                                         </tr>  
                                         <tr>
-                                            <td width="41%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td  bgcolor="#ffffff" class="StaticLeft">
                                                 Loan amount (Rs.)
                                             </td>
-                                            <td width="4%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td  bgcolor="#ffffff" class="StaticLeft">
                                             </td>
                                             <td bgcolor="#ffffff" class="StaticLeft">
                                                 <input name="AutoEmiCalculator1$txt_p" type="text" value="100000" maxlength="8" id="AutoEmiCalculator1_txt_p" class="TxtBox" onchange="check_autoemi(this,&#39;int&#39;);asset_autoemi();" style="width:70px;" />
@@ -111,13 +111,13 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width="41%" bgcolor="#ffffff">
+                                            <td  bgcolor="#ffffff">
                                                 Tenure
                                             </td>
                                             <td bgcolor="#ffffff" class="StaticLeft">&nbsp;
                                                 
                                             </td>
-                                            <td width="55%" bgcolor="#ffffff">
+                                            <td  bgcolor="#ffffff">
                                                 <input name="AutoEmiCalculator1$txt_tenure" type="text" value="36" maxlength="2" id="AutoEmiCalculator1_txt_tenure" class="TxtBox" onchange="check_autoemi(this,&#39;int&#39;);asset_autoemi();" style="width:70px;" />
                                                             
                                                 
@@ -128,13 +128,13 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width="41%" bgcolor="#ffffff">
+                                            <td  bgcolor="#ffffff">
                                                 Interest rate
                                             </td>
                                             <td bgcolor="#ffffff" class="StaticLeft">&nbsp;
                                                 
                                             </td>
-                                            <td width="55%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 <input name="AutoEmiCalculator1$txt_i" type="text" value="15" maxlength="5" id="AutoEmiCalculator1_txt_i" class="TxtBox" onchange="check_autoemi(this,&#39;int&#39;);" style="width:70px;" />
                                                             
                                                 
@@ -142,13 +142,13 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width="41%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 Monthly Reducing balance
                                             </td>
                                             <td bgcolor="#ffffff" class="StaticLeft">&nbsp;
                                                 
                                             </td>
-                                            <td width="55%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 <input type=checkbox id="reset" value="1" checked=true/>
                                                 
                                             </td>
@@ -159,13 +159,13 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width="41%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 No. of adv EMIs
                                             </td>
                                             <td bgcolor="#ffffff" class="StaticLeft">&nbsp;
                                                 
                                             </td>
-                                            <td width="55%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 <input name="AutoEmiCalculator1$txt_adv" type="text" value="1" maxlength="2" id="AutoEmiCalculator1_txt_adv" class="TxtBox" onchange="check_autoemi(this,&#39;int&#39;);" style="width:70px;" />
                                                             
                                                 
@@ -177,13 +177,13 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width="41%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 Deposit as % of loan
                                             </td>
                                             <td bgcolor="#ffffff" class="StaticLeft">&nbsp;
                                                 
                                             </td>
-                                            <td width="55%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 <input name="AutoEmiCalculator1$txt_dep" type="text" value="20" maxlength="5" id="AutoEmiCalculator1_txt_dep" class="TxtBox" onchange="check_autoemi(this,&#39;int&#39;);" style="width:70px;" />
                                                             
                                           
@@ -192,13 +192,13 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width="41%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 Interest on deposit(%)
                                             </td>
                                             <td bgcolor="#ffffff" class="StaticLeft">&nbsp;
                                                 
                                             </td>
-                                            <td width="55%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 <input name="AutoEmiCalculator1$txt_idep" type="text" value="15" maxlength="5" id="AutoEmiCalculator1_txt_idep" class="TxtBox" onchange="check_autoemi(this,&#39;int&#39;);" style="width:70px;" />
                                                             
                                           
@@ -207,13 +207,13 @@ Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'breakup', 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width="41%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 Compounding Frequency
                                             </td>
                                             <td bgcolor="#ffffff">&nbsp;
                                                 
                                             </td>
-                                            <td width="55%" bgcolor="#ffffff" class="StaticLeft">
+                                            <td bgcolor="#ffffff" class="StaticLeft">
                                                 <select name="comp" class="dropdown1">
                                                     <option value="-1">Simple</option>
                                                     <option value="12" selected="true">Yearly</option>

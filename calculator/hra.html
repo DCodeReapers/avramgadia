@@ -20,6 +20,11 @@
     <!-- Common Files-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="scripts/main.js"></script>
+    <style>
+        tbody{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 	<div class="container">
@@ -196,152 +201,151 @@
       </SCRIPT>
 
  <TABLE id=tbl height="100%" cellSpacing=0 cellPadding=0 width="100%">
-<CAPTION class=header><FONT face=Arial><h2>HRA Calculator</h2></FONT></CAPTION>
+<CAPTION class=header><FONT face=Arial><h2 style="text-align: center;">HRA Calculator</h2></FONT></CAPTION>
 
 <TBODY>
 <TR height="20%">
 <TD colSpan=7></TD></TR>
 <TR>
-<TH style="WIDTH: 3%; height: 30px;"></TH>
-<TH style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; height: 30px;" align=left>Month</TH>
-<TH style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; height: 30px;">Salary</TH>
-<TH style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; height: 30px;">HRA Received</TH>
-<TH style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; height: 30px;">Rent Paid</TH>
-<TH style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; height: 30px;">Exempted</TH>
-<TH style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; height: 30px;">Taxable</TH>
+<TH style="width: 3%; height: 30px;"></TH>
+<TH style="font-size: 9pt; font-family: Arial; height: 30px;" align=left>Month</TH>
+<TH style="font-size: 9pt; font-family: Arial; height: 30px;">Salary</TH>
+<TH style="font-size: 9pt; font-family: Arial; height: 30px;">HRA Received</TH>
+<TH style="font-size: 9pt; font-family: Arial; height: 30px;">Rent Paid</TH>
+<TH style="font-size: 9pt; font-family: Arial; height: 30px;">Exempted</TH>
+<TH style="font-size: 9pt; font-family: Arial; height: 30px;">Taxable</TH>
+<TH style="font-size: 9pt; font-family: Arial; height: 30px;">Metro City</TH></TR>
+<TR>
+<TD style="font-size: 9pt; font-family: Arial; height: 24px"></TD>
+<TD style="font-size: 9pt; font-family: Arial; height: 24px"><FONT face=Arial>April:</FONT></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlSalary" type="text" id="ctl00_ContentPlaceHolder1_txtAprlSalary" onkeyup="copyRow(this,2,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlHra" type="text" id="ctl00_ContentPlaceHolder1_txtAprlHra" onkeyup="copyRow(this,2,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlRPaid" type="text" id="ctl00_ContentPlaceHolder1_txtAprlRPaid" onkeyup="copyRow(this,2,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlExemted" type="text" id="ctl00_ContentPlaceHolder1_txtAprlExemted" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlTaxable" type="text" id="ctl00_ContentPlaceHolder1_txtAprlTaxable" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%; height: 24px" align=middle><INPUT id=chkMetroCity onclick=CalculateRows(2); type=checkbox></TD></TR>
+<TR>
+<TD style="font-size: 9pt; font-family: Arial"></TD>
+<TD style="font-size: 9pt; font-family: Arial">May:</TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox1" type="text" id="ctl00_ContentPlaceHolder1_TextBox1" onkeyup="copyRow(this,3,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
 
-<TH style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; height: 30px;">Metro City</TH></TR>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox2" type="text" id="ctl00_ContentPlaceHolder1_TextBox2" onkeyup="copyRow(this,3,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox3" type="text" id="ctl00_ContentPlaceHolder1_TextBox3" onkeyup="copyRow(this,3,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox4" type="text" id="ctl00_ContentPlaceHolder1_TextBox4" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox5" type="text" id="ctl00_ContentPlaceHolder1_TextBox5" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%" align=middle><INPUT id=Checkbox1 onclick=CalculateRows(3); type=checkbox></TD></TR>
 <TR>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; HEIGHT: 24px"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; HEIGHT: 24px"><FONT face=Arial>April:</FONT></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlSalary" type="text" id="ctl00_ContentPlaceHolder1_txtAprlSalary" onkeyup="copyRow(this,2,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlHra" type="text" id="ctl00_ContentPlaceHolder1_txtAprlHra" onkeyup="copyRow(this,2,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlRPaid" type="text" id="ctl00_ContentPlaceHolder1_txtAprlRPaid" onkeyup="copyRow(this,2,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlExemted" type="text" id="ctl00_ContentPlaceHolder1_txtAprlExemted" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$txtAprlTaxable" type="text" id="ctl00_ContentPlaceHolder1_txtAprlTaxable" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%; HEIGHT: 24px" align=middle><INPUT id=chkMetroCity onclick=CalculateRows(2); type=checkbox></TD></TR>
+<TD style="width: 3%"></TD>
+<TD style="font-size: 9pt; font-family: Arial;">June:</TD>
+<TD style="width: 15%; "><input name="ctl00$ContentPlaceHolder1$TextBox6" type="text" id="ctl00_ContentPlaceHolder1_TextBox6" onkeyup="copyRow(this,4,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%;"><input name="ctl00$ContentPlaceHolder1$TextBox7" type="text" id="ctl00_ContentPlaceHolder1_TextBox7" onkeyup="copyRow(this,4,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; "><input name="ctl00$ContentPlaceHolder1$TextBox8" type="text" id="ctl00_ContentPlaceHolder1_TextBox8" onkeyup="copyRow(this,4,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; "><input name="ctl00$ContentPlaceHolder1$TextBox9" type="text" id="ctl00_ContentPlaceHolder1_TextBox9" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; "><input name="ctl00$ContentPlaceHolder1$TextBox10" type="text" id="ctl00_ContentPlaceHolder1_TextBox10" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%; " align=middle><INPUT id=Checkbox2 onclick=CalculateRows(4); type=checkbox></TD></TR>
 <TR>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">May:</TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox1" type="text" id="ctl00_ContentPlaceHolder1_TextBox1" onkeyup="copyRow(this,3,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
+<TD style="width: 3%"></TD>
 
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox2" type="text" id="ctl00_ContentPlaceHolder1_TextBox2" onkeyup="copyRow(this,3,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox3" type="text" id="ctl00_ContentPlaceHolder1_TextBox3" onkeyup="copyRow(this,3,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox4" type="text" id="ctl00_ContentPlaceHolder1_TextBox4" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox5" type="text" id="ctl00_ContentPlaceHolder1_TextBox5" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%" align=middle><INPUT id=Checkbox1 onclick=CalculateRows(3); type=checkbox></TD></TR>
+<TD style="font-size: 9pt; font-family: Arial">July:</TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox11" type="text" id="ctl00_ContentPlaceHolder1_TextBox11" onkeyup="copyRow(this,5,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox12" type="text" id="ctl00_ContentPlaceHolder1_TextBox12" onkeyup="copyRow(this,5,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox13" type="text" id="ctl00_ContentPlaceHolder1_TextBox13" onkeyup="copyRow(this,5,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox14" type="text" id="ctl00_ContentPlaceHolder1_TextBox14" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox15" type="text" id="ctl00_ContentPlaceHolder1_TextBox15" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%" align=middle><INPUT id=Checkbox3 onclick=CalculateRows(5); type=checkbox></TD></TR>
 <TR>
-<TD style="WIDTH: 3%"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial;">June:</TD>
-<TD style="WIDTH: 15%; "><input name="ctl00$ContentPlaceHolder1$TextBox6" type="text" id="ctl00_ContentPlaceHolder1_TextBox6" onkeyup="copyRow(this,4,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%;"><input name="ctl00$ContentPlaceHolder1$TextBox7" type="text" id="ctl00_ContentPlaceHolder1_TextBox7" onkeyup="copyRow(this,4,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; "><input name="ctl00$ContentPlaceHolder1$TextBox8" type="text" id="ctl00_ContentPlaceHolder1_TextBox8" onkeyup="copyRow(this,4,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; "><input name="ctl00$ContentPlaceHolder1$TextBox9" type="text" id="ctl00_ContentPlaceHolder1_TextBox9" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; "><input name="ctl00$ContentPlaceHolder1$TextBox10" type="text" id="ctl00_ContentPlaceHolder1_TextBox10" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%; " align=middle><INPUT id=Checkbox2 onclick=CalculateRows(4); type=checkbox></TD></TR>
-<TR>
-<TD style="WIDTH: 3%"></TD>
+<TD style="width: 3%; height: 24px"></TD>
+<TD style="font-size: 9pt; font-family: Arial">August:</TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox16" type="text" id="ctl00_ContentPlaceHolder1_TextBox16" onkeyup="copyRow(this,6,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox17" type="text" id="ctl00_ContentPlaceHolder1_TextBox17" onkeyup="copyRow(this,6,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox18" type="text" id="ctl00_ContentPlaceHolder1_TextBox18" onkeyup="copyRow(this,6,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox19" type="text" id="ctl00_ContentPlaceHolder1_TextBox19" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox20" type="text" id="ctl00_ContentPlaceHolder1_TextBox20" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
 
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">July:</TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox11" type="text" id="ctl00_ContentPlaceHolder1_TextBox11" onkeyup="copyRow(this,5,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox12" type="text" id="ctl00_ContentPlaceHolder1_TextBox12" onkeyup="copyRow(this,5,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox13" type="text" id="ctl00_ContentPlaceHolder1_TextBox13" onkeyup="copyRow(this,5,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox14" type="text" id="ctl00_ContentPlaceHolder1_TextBox14" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox15" type="text" id="ctl00_ContentPlaceHolder1_TextBox15" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%" align=middle><INPUT id=Checkbox3 onclick=CalculateRows(5); type=checkbox></TD></TR>
+<TD style="width: 12%; height: 24px" align=middle><INPUT id=Checkbox4 onclick=CalculateRows(6); type=checkbox></TD></TR>
 <TR>
-<TD style="WIDTH: 3%; HEIGHT: 24px"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">August:</TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox16" type="text" id="ctl00_ContentPlaceHolder1_TextBox16" onkeyup="copyRow(this,6,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox17" type="text" id="ctl00_ContentPlaceHolder1_TextBox17" onkeyup="copyRow(this,6,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox18" type="text" id="ctl00_ContentPlaceHolder1_TextBox18" onkeyup="copyRow(this,6,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox19" type="text" id="ctl00_ContentPlaceHolder1_TextBox19" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox20" type="text" id="ctl00_ContentPlaceHolder1_TextBox20" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
+<TD style="width: 3%; height: 23px"></TD>
+<TD style="font-size: 9pt; font-family: Arial">September:</TD>
+<TD style="width: 15%; height: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox21" type="text" id="ctl00_ContentPlaceHolder1_TextBox21" onkeyup="copyRow(this,7,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox22" type="text" id="ctl00_ContentPlaceHolder1_TextBox22" onkeyup="copyRow(this,7,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox23" type="text" id="ctl00_ContentPlaceHolder1_TextBox23" onkeyup="copyRow(this,7,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox24" type="text" id="ctl00_ContentPlaceHolder1_TextBox24" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox25" type="text" id="ctl00_ContentPlaceHolder1_TextBox25" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%; height: 23px" align=middle><INPUT id=Checkbox5 onclick=CalculateRows(7); type=checkbox></TD></TR>
+<TR>
+<TD style="width: 3%"></TD>
+<TD style="font-size: 9pt; font-family: Arial">October:</TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox27" type="text" id="ctl00_ContentPlaceHolder1_TextBox27" onkeyup="copyRow(this,8,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox28" type="text" id="ctl00_ContentPlaceHolder1_TextBox28" onkeyup="copyRow(this,8,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
 
-<TD style="WIDTH: 12%; HEIGHT: 24px" align=middle><INPUT id=Checkbox4 onclick=CalculateRows(6); type=checkbox></TD></TR>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox29" type="text" id="ctl00_ContentPlaceHolder1_TextBox29" onkeyup="copyRow(this,8,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$txtNew" type="text" id="ctl00_ContentPlaceHolder1_txtNew" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"> </TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox30" type="text" id="ctl00_ContentPlaceHolder1_TextBox30" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%" align=middle><INPUT id=Checkbox6 onclick=CalculateRows(8); type=checkbox></TD></TR>
 <TR>
-<TD style="WIDTH: 3%; HEIGHT: 23px"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">September:</TD>
-<TD style="WIDTH: 15%; HEIGHT: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox21" type="text" id="ctl00_ContentPlaceHolder1_TextBox21" onkeyup="copyRow(this,7,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox22" type="text" id="ctl00_ContentPlaceHolder1_TextBox22" onkeyup="copyRow(this,7,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox23" type="text" id="ctl00_ContentPlaceHolder1_TextBox23" onkeyup="copyRow(this,7,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox24" type="text" id="ctl00_ContentPlaceHolder1_TextBox24" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 23px"><input name="ctl00$ContentPlaceHolder1$TextBox25" type="text" id="ctl00_ContentPlaceHolder1_TextBox25" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%; HEIGHT: 23px" align=middle><INPUT id=Checkbox5 onclick=CalculateRows(7); type=checkbox></TD></TR>
+<TD style="width: 3%; height: 24px"></TD>
+<TD style="font-size: 9pt; font-family: Arial">November:</TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox31" type="text" id="ctl00_ContentPlaceHolder1_TextBox31" onkeyup="copyRow(this,9,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox32" type="text" id="ctl00_ContentPlaceHolder1_TextBox32" onkeyup="copyRow(this,9,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox33" type="text" id="ctl00_ContentPlaceHolder1_TextBox33" onkeyup="copyRow(this,9,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox34" type="text" id="ctl00_ContentPlaceHolder1_TextBox34" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox35" type="text" id="ctl00_ContentPlaceHolder1_TextBox35" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%; height: 24px" align=middle><INPUT id=Checkbox7 onclick=CalculateRows(9); type=checkbox></TD></TR>
 <TR>
-<TD style="WIDTH: 3%"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">October:</TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox27" type="text" id="ctl00_ContentPlaceHolder1_TextBox27" onkeyup="copyRow(this,8,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox28" type="text" id="ctl00_ContentPlaceHolder1_TextBox28" onkeyup="copyRow(this,8,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
+<TD style="width: 3%"></TD>
 
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox29" type="text" id="ctl00_ContentPlaceHolder1_TextBox29" onkeyup="copyRow(this,8,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$txtNew" type="text" id="ctl00_ContentPlaceHolder1_txtNew" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"> </TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox30" type="text" id="ctl00_ContentPlaceHolder1_TextBox30" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%" align=middle><INPUT id=Checkbox6 onclick=CalculateRows(8); type=checkbox></TD></TR>
+<TD style="font-size: 9pt; font-family: Arial">December:</TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox36" type="text" id="ctl00_ContentPlaceHolder1_TextBox36" onkeyup="copyRow(this,10,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox37" type="text" id="ctl00_ContentPlaceHolder1_TextBox37" onkeyup="copyRow(this,10,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox38" type="text" id="ctl00_ContentPlaceHolder1_TextBox38" onkeyup="copyRow(this,10,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox39" type="text" id="ctl00_ContentPlaceHolder1_TextBox39" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox40" type="text" id="ctl00_ContentPlaceHolder1_TextBox40" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%" align=middle><INPUT id=Checkbox8 onclick=CalculateRows(10); type=checkbox></TD></TR>
 <TR>
-<TD style="WIDTH: 3%; HEIGHT: 24px"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">November:</TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox31" type="text" id="ctl00_ContentPlaceHolder1_TextBox31" onkeyup="copyRow(this,9,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox32" type="text" id="ctl00_ContentPlaceHolder1_TextBox32" onkeyup="copyRow(this,9,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox33" type="text" id="ctl00_ContentPlaceHolder1_TextBox33" onkeyup="copyRow(this,9,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox34" type="text" id="ctl00_ContentPlaceHolder1_TextBox34" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; HEIGHT: 24px"><input name="ctl00$ContentPlaceHolder1$TextBox35" type="text" id="ctl00_ContentPlaceHolder1_TextBox35" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%; HEIGHT: 24px" align=middle><INPUT id=Checkbox7 onclick=CalculateRows(9); type=checkbox></TD></TR>
-<TR>
-<TD style="WIDTH: 3%"></TD>
+<TD style="width: 3%"></TD>
+<TD style="font-size: 9pt; font-family: Arial">January:</TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox41" type="text" id="ctl00_ContentPlaceHolder1_TextBox41" onkeyup="copyRow(this,11,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox42" type="text" id="ctl00_ContentPlaceHolder1_TextBox42" onkeyup="copyRow(this,11,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox43" type="text" id="ctl00_ContentPlaceHolder1_TextBox43" onkeyup="copyRow(this,11,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox44" type="text" id="ctl00_ContentPlaceHolder1_TextBox44" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox45" type="text" id="ctl00_ContentPlaceHolder1_TextBox45" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
 
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">December:</TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox36" type="text" id="ctl00_ContentPlaceHolder1_TextBox36" onkeyup="copyRow(this,10,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox37" type="text" id="ctl00_ContentPlaceHolder1_TextBox37" onkeyup="copyRow(this,10,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox38" type="text" id="ctl00_ContentPlaceHolder1_TextBox38" onkeyup="copyRow(this,10,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox39" type="text" id="ctl00_ContentPlaceHolder1_TextBox39" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox40" type="text" id="ctl00_ContentPlaceHolder1_TextBox40" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%" align=middle><INPUT id=Checkbox8 onclick=CalculateRows(10); type=checkbox></TD></TR>
+<TD style="width: 12%" align=middle><INPUT id=Checkbox9 onclick=CalculateRows(11); type=checkbox></TD></TR>
 <TR>
-<TD style="WIDTH: 3%"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">January:</TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox41" type="text" id="ctl00_ContentPlaceHolder1_TextBox41" onkeyup="copyRow(this,11,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox42" type="text" id="ctl00_ContentPlaceHolder1_TextBox42" onkeyup="copyRow(this,11,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox43" type="text" id="ctl00_ContentPlaceHolder1_TextBox43" onkeyup="copyRow(this,11,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox44" type="text" id="ctl00_ContentPlaceHolder1_TextBox44" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox45" type="text" id="ctl00_ContentPlaceHolder1_TextBox45" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
+<TD style="width: 3%"></TD>
+<TD style="font-size: 9pt; font-family: Arial">February:</TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox46" type="text" id="ctl00_ContentPlaceHolder1_TextBox46" onkeyup="copyRow(this,12,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox47" type="text" id="ctl00_ContentPlaceHolder1_TextBox47" onkeyup="copyRow(this,12,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox48" type="text" id="ctl00_ContentPlaceHolder1_TextBox48" onkeyup="copyRow(this,12,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox49" type="text" id="ctl00_ContentPlaceHolder1_TextBox49" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox50" type="text" id="ctl00_ContentPlaceHolder1_TextBox50" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%" align=middle><INPUT id=Checkbox10 onclick=CalculateRows(12); type=checkbox></TD></TR>
+<TR>
+<TD style="width: 3%; height: 24px;"></TD>
+<TD style="font-size: 9pt; font-family: Arial; height: 24px;">March:</TD>
+<TD style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox51" type="text" id="ctl00_ContentPlaceHolder1_TextBox51" onkeyup="copyRow(this,13,2);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox52" type="text" id="ctl00_ContentPlaceHolder1_TextBox52" onkeyup="copyRow(this,13,3);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
 
-<TD style="WIDTH: 12%" align=middle><INPUT id=Checkbox9 onclick=CalculateRows(11); type=checkbox></TD></TR>
-<TR>
-<TD style="WIDTH: 3%"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial">February:</TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox46" type="text" id="ctl00_ContentPlaceHolder1_TextBox46" onkeyup="copyRow(this,12,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox47" type="text" id="ctl00_ContentPlaceHolder1_TextBox47" onkeyup="copyRow(this,12,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox48" type="text" id="ctl00_ContentPlaceHolder1_TextBox48" onkeyup="copyRow(this,12,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox49" type="text" id="ctl00_ContentPlaceHolder1_TextBox49" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%"><input name="ctl00$ContentPlaceHolder1$TextBox50" type="text" id="ctl00_ContentPlaceHolder1_TextBox50" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%" align=middle><INPUT id=Checkbox10 onclick=CalculateRows(12); type=checkbox></TD></TR>
-<TR>
-<TD style="WIDTH: 3%; height: 24px;"></TD>
-<TD style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; height: 24px;">March:</TD>
-<TD style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox51" type="text" id="ctl00_ContentPlaceHolder1_TextBox51" onkeyup="copyRow(this,13,2);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox52" type="text" id="ctl00_ContentPlaceHolder1_TextBox52" onkeyup="copyRow(this,13,3);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-
-<TD style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox53" type="text" id="ctl00_ContentPlaceHolder1_TextBox53" onkeyup="copyRow(this,13,4);" style="TEXT-ALIGN: right" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox54" type="text" id="ctl00_ContentPlaceHolder1_TextBox54" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox55" type="text" id="ctl00_ContentPlaceHolder1_TextBox55" style="TEXT-ALIGN: right" readOnly="" Width="96%" /></INPUT type="text"></TD>
-<TD style="WIDTH: 12%; height: 24px;" align=middle><INPUT id=Checkbox11 onclick=CalculateRows(13); type=checkbox></TD>
+<TD style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox53" type="text" id="ctl00_ContentPlaceHolder1_TextBox53" onkeyup="copyRow(this,13,4);" style="text-align: right" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox54" type="text" id="ctl00_ContentPlaceHolder1_TextBox54" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$TextBox55" type="text" id="ctl00_ContentPlaceHolder1_TextBox55" style="text-align: right" readOnly="" width="96%" /></INPUT type="text"></TD>
+<TD style="width: 12%; height: 24px;" align=middle><INPUT id=Checkbox11 onclick=CalculateRows(13); type=checkbox></TD>
 </TR>
 <tr>
 
    
-    <td style="WIDTH: 3%;height: 24px;"></td>
-    <td style="FONT-SIZE:15pt; FONT-FAMILY:Arial; width: 24px;">
+    <td style="width: 3%;height: 24px;"></td>
+    <td style="font-size:15pt; font-family:Arial; width: 24px;">
         Total:</td>
 
-    <td style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalSalary" type="text" id="ctl00_ContentPlaceHolder1_txtTotalSalary" style="text-align:right " readonly="readonly" /></td> 
-    <td style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalHraReceived" type="text" id="ctl00_ContentPlaceHolder1_txtTotalHraReceived" style="text-align:right " readonly="readonly" /></td>
-    <td style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalRentPaidy" type="text" id="ctl00_ContentPlaceHolder1_txtTotalRentPaidy" style="text-align:right" readonly="readonly" /></td>
-    <td style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalExempted" type="text" id="ctl00_ContentPlaceHolder1_txtTotalExempted" style="text-align:right" readonly="readonly" /></td>
-    <td style="WIDTH: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalTaxable" type="text" id="ctl00_ContentPlaceHolder1_txtTotalTaxable" style="text-align:right" readonly="readonly" /></td>
+    <td style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalSalary" type="text" id="ctl00_ContentPlaceHolder1_txtTotalSalary" style="text-align:right " readonly="readonly" /></td> 
+    <td style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalHraReceived" type="text" id="ctl00_ContentPlaceHolder1_txtTotalHraReceived" style="text-align:right " readonly="readonly" /></td>
+    <td style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalRentPaidy" type="text" id="ctl00_ContentPlaceHolder1_txtTotalRentPaidy" style="text-align:right" readonly="readonly" /></td>
+    <td style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalExempted" type="text" id="ctl00_ContentPlaceHolder1_txtTotalExempted" style="text-align:right" readonly="readonly" /></td>
+    <td style="width: 15%; height: 24px;"><input name="ctl00$ContentPlaceHolder1$txtTotalTaxable" type="text" id="ctl00_ContentPlaceHolder1_txtTotalTaxable" style="text-align:right" readonly="readonly" /></td>
     
     
-    <td style="WIDTH: 12%; height: 24px;"></td>
+    <td style="width: 12%; height: 24px;"></td>
     </tr>
     </table>
 
